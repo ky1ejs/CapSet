@@ -8,6 +8,7 @@
 import UIKit
 import PhotosUI
 
+@MainActor
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -35,9 +36,10 @@ class ViewController: UIViewController {
 extension ViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         _ = results.first!.itemProvider.loadDataRepresentation(for: .jpeg) { data, error in
-            let image = CIImage(data: data!)!
-            let metadata = ImageMetadata(image: image)
-            print(metadata)
+            let captionVC = CaptionViewController(imageData: data!)
+//            self.dismiss(animated: true) {
+//                self.navigationController?.pushViewController(captionVC, animated: true)
+//            }
         }
     }
     

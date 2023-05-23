@@ -17,6 +17,7 @@
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
 		9388FC992A1C56700083A500 /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
+		9388FC9B2A1C603A0083A500 /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9388FC892A1C427C0083A500 /* SetCapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITests.swift; sourceTree = "<group>"; };
 		9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
+		9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				9388FC682A1C427C0083A500 /* AppDelegate.swift */,
 				9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */,
 				9388FC6C2A1C427C0083A500 /* ViewController.swift */,
+				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
 				9388FC982A1C56700083A500 /* ImageMetadata.swift */,
 				9388FC6E2A1C427C0083A500 /* Main.storyboard */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 				9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */,
 				9388FC992A1C56700083A500 /* ImageMetadata.swift in Sources */,
 				9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */,
+				9388FC9B2A1C603A0083A500 /* CaptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
