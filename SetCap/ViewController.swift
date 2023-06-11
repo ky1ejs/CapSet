@@ -36,10 +36,12 @@ class ViewController: UIViewController {
 extension ViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         _ = results.first!.itemProvider.loadDataRepresentation(for: .jpeg) { data, error in
-            let captionVC = CaptionViewController(imageData: data!)
-//            self.dismiss(animated: true) {
-//                self.navigationController?.pushViewController(captionVC, animated: true)
-//            }
+            DispatchQueue.main.async {
+                let captionVC = CaptionViewController(imageData: data!)
+                self.dismiss(animated:true) {
+                    self.navigationController?.pushViewController(captionVC, animated: true)
+                }
+            }
         }
     }
     
