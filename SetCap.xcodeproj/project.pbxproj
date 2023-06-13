@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9341656E2A3673030032F64B /* SetCapCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9341656D2A3673030032F64B /* SetCapCore.docc */; };
+		934165742A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
+		9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341657A2A3673030032F64B /* SetCapCoreTests.swift */; };
+		9341657C2A3673030032F64B /* SetCapCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341656C2A3673030032F64B /* SetCapCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9341657F2A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
+		934165802A3673030032F64B /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 934165902A36731B0032F64B /* SetCapUIKit.docc */; };
+		934165972A36731B0032F64B /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
+		9341659E2A36731B0032F64B /* SetCapUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */; };
+		9341659F2A36731B0032F64B /* SetCapUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341658F2A36731B0032F64B /* SetCapUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934165A22A36731B0032F64B /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
+		934165A32A36731B0032F64B /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		934165AB2A36733B0032F64B /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934165AA2A36733B0032F64B /* Caption.swift */; };
+		934165B02A3673610032F64B /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
+		934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */; };
+		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
+		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
+		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC682A1C427C0083A500 /* AppDelegate.swift */; };
 		9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */; };
 		9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6C2A1C427C0083A500 /* ViewController.swift */; };
@@ -16,11 +34,58 @@
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
-		9388FC992A1C56700083A500 /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
-		9388FC9B2A1C603A0083A500 /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		934165752A3673030032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934165692A3673030032F64B;
+			remoteInfo = SetCapCore;
+		};
+		934165772A3673030032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9388FC642A1C427C0083A500;
+			remoteInfo = SetCap;
+		};
+		9341657D2A3673030032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934165692A3673030032F64B;
+			remoteInfo = SetCapCore;
+		};
+		934165982A36731B0032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341658C2A36731B0032F64B;
+			remoteInfo = SetCapUIKit;
+		};
+		9341659A2A36731B0032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9388FC642A1C427C0083A500;
+			remoteInfo = SetCap;
+		};
+		934165A02A36731B0032F64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341658C2A36731B0032F64B;
+			remoteInfo = SetCapUIKit;
+		};
+		9343FBE02A37EF2F00E91091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9343FBD72A37EF2F00E91091;
+			remoteInfo = ShareExtension;
+		};
 		9388FC7C2A1C427C0083A500 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
@@ -37,7 +102,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		934165642A36721F0032F64B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165842A3673030032F64B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				934165802A3673030032F64B /* SetCapCore.framework in Embed Frameworks */,
+				934165A32A36731B0032F64B /* SetCapUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		9341656A2A3673030032F64B /* SetCapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SetCapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341656C2A3673030032F64B /* SetCapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCapCore.h; sourceTree = "<group>"; };
+		9341656D2A3673030032F64B /* SetCapCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SetCapCore.docc; sourceTree = "<group>"; };
+		934165732A3673030032F64B /* SetCapCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetCapCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341657A2A3673030032F64B /* SetCapCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapCoreTests.swift; sourceTree = "<group>"; };
+		9341658D2A36731B0032F64B /* SetCapUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SetCapUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341658F2A36731B0032F64B /* SetCapUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCapUIKit.h; sourceTree = "<group>"; };
+		934165902A36731B0032F64B /* SetCapUIKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SetCapUIKit.docc; sourceTree = "<group>"; };
+		934165962A36731B0032F64B /* SetCapUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetCapUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUIKitTests.swift; sourceTree = "<group>"; };
+		934165AA2A36733B0032F64B /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
+		9343FBD82A37EF2F00E91091 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9343FBDD2A37EF2F00E91091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9343FBDF2A37EF2F00E91091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9388FC652A1C427C0083A500 /* SetCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388FC682A1C427C0083A500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,10 +163,49 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		934165672A3673030032F64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165702A3673030032F64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934165742A3673030032F64B /* SetCapCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341658A2A36731B0032F64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165932A36731B0032F64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934165972A36731B0032F64B /* SetCapUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9343FBD52A37EF2F00E91091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9388FC622A1C427C0083A500 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9341657F2A3673030032F64B /* SetCapCore.framework in Frameworks */,
+				934165A22A36731B0032F64B /* SetCapUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +226,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		934165522A36721F0032F64B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9341656B2A3673030032F64B /* SetCapCore */ = {
+			isa = PBXGroup;
+			children = (
+				9341656C2A3673030032F64B /* SetCapCore.h */,
+				9388FC982A1C56700083A500 /* ImageMetadata.swift */,
+				934165AA2A36733B0032F64B /* Caption.swift */,
+				9341656D2A3673030032F64B /* SetCapCore.docc */,
+			);
+			path = SetCapCore;
+			sourceTree = "<group>";
+		};
+		934165792A3673030032F64B /* SetCapCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				9341657A2A3673030032F64B /* SetCapCoreTests.swift */,
+			);
+			path = SetCapCoreTests;
+			sourceTree = "<group>";
+		};
+		9341658E2A36731B0032F64B /* SetCapUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
+				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
+				934165902A36731B0032F64B /* SetCapUIKit.docc */,
+			);
+			path = SetCapUIKit;
+			sourceTree = "<group>";
+		};
+		9341659C2A36731B0032F64B /* SetCapUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */,
+			);
+			path = SetCapUIKitTests;
+			sourceTree = "<group>";
+		};
+		9343FBD92A37EF2F00E91091 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */,
+				9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */,
+				9343FBDF2A37EF2F00E91091 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
 		9388FC5C2A1C427C0083A500 = {
 			isa = PBXGroup;
 			children = (
 				9388FC672A1C427C0083A500 /* SetCap */,
 				9388FC7E2A1C427C0083A500 /* SetCapTests */,
 				9388FC882A1C427C0083A500 /* SetCapUITests */,
+				9341656B2A3673030032F64B /* SetCapCore */,
+				934165792A3673030032F64B /* SetCapCoreTests */,
+				9341658E2A36731B0032F64B /* SetCapUIKit */,
+				9341659C2A36731B0032F64B /* SetCapUIKitTests */,
+				9343FBD92A37EF2F00E91091 /* ShareExtension */,
+				934165522A36721F0032F64B /* Frameworks */,
 				9388FC662A1C427C0083A500 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +303,11 @@
 				9388FC652A1C427C0083A500 /* SetCap.app */,
 				9388FC7B2A1C427C0083A500 /* SetCapTests.xctest */,
 				9388FC852A1C427C0083A500 /* SetCapUITests.xctest */,
+				9341656A2A3673030032F64B /* SetCapCore.framework */,
+				934165732A3673030032F64B /* SetCapCoreTests.xctest */,
+				9341658D2A36731B0032F64B /* SetCapUIKit.framework */,
+				934165962A36731B0032F64B /* SetCapUIKitTests.xctest */,
+				9343FBD82A37EF2F00E91091 /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,8 +318,6 @@
 				9388FC682A1C427C0083A500 /* AppDelegate.swift */,
 				9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */,
 				9388FC6C2A1C427C0083A500 /* ViewController.swift */,
-				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
-				9388FC982A1C56700083A500 /* ImageMetadata.swift */,
 				9388FC6E2A1C427C0083A500 /* Main.storyboard */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
 				9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */,
@@ -135,7 +345,117 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		934165652A3673030032F64B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341657C2A3673030032F64B /* SetCapCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165882A36731B0032F64B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341659F2A36731B0032F64B /* SetCapUIKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		934165692A3673030032F64B /* SetCapCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934165812A3673030032F64B /* Build configuration list for PBXNativeTarget "SetCapCore" */;
+			buildPhases = (
+				934165652A3673030032F64B /* Headers */,
+				934165662A3673030032F64B /* Sources */,
+				934165672A3673030032F64B /* Frameworks */,
+				934165682A3673030032F64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SetCapCore;
+			productName = SetCapCore;
+			productReference = 9341656A2A3673030032F64B /* SetCapCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		934165722A3673030032F64B /* SetCapCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934165852A3673030032F64B /* Build configuration list for PBXNativeTarget "SetCapCoreTests" */;
+			buildPhases = (
+				9341656F2A3673030032F64B /* Sources */,
+				934165702A3673030032F64B /* Frameworks */,
+				934165712A3673030032F64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				934165762A3673030032F64B /* PBXTargetDependency */,
+				934165782A3673030032F64B /* PBXTargetDependency */,
+			);
+			name = SetCapCoreTests;
+			productName = SetCapCoreTests;
+			productReference = 934165732A3673030032F64B /* SetCapCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9341658C2A36731B0032F64B /* SetCapUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934165A42A36731B0032F64B /* Build configuration list for PBXNativeTarget "SetCapUIKit" */;
+			buildPhases = (
+				934165882A36731B0032F64B /* Headers */,
+				934165892A36731B0032F64B /* Sources */,
+				9341658A2A36731B0032F64B /* Frameworks */,
+				9341658B2A36731B0032F64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SetCapUIKit;
+			productName = SetCapUIKit;
+			productReference = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		934165952A36731B0032F64B /* SetCapUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 934165A72A36731B0032F64B /* Build configuration list for PBXNativeTarget "SetCapUIKitTests" */;
+			buildPhases = (
+				934165922A36731B0032F64B /* Sources */,
+				934165932A36731B0032F64B /* Frameworks */,
+				934165942A36731B0032F64B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				934165992A36731B0032F64B /* PBXTargetDependency */,
+				9341659B2A36731B0032F64B /* PBXTargetDependency */,
+			);
+			name = SetCapUIKitTests;
+			productName = SetCapUIKitTests;
+			productReference = 934165962A36731B0032F64B /* SetCapUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9343FBD72A37EF2F00E91091 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9343FBE32A37EF2F00E91091 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				9343FBD42A37EF2F00E91091 /* Sources */,
+				9343FBD52A37EF2F00E91091 /* Frameworks */,
+				9343FBD62A37EF2F00E91091 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9388FC642A1C427C0083A500 /* SetCap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9388FC8F2A1C427C0083A500 /* Build configuration list for PBXNativeTarget "SetCap" */;
@@ -143,10 +463,15 @@
 				9388FC612A1C427C0083A500 /* Sources */,
 				9388FC622A1C427C0083A500 /* Frameworks */,
 				9388FC632A1C427C0083A500 /* Resources */,
+				934165642A36721F0032F64B /* Embed Foundation Extensions */,
+				934165842A3673030032F64B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9341657E2A3673030032F64B /* PBXTargetDependency */,
+				934165A12A36731B0032F64B /* PBXTargetDependency */,
+				9343FBE12A37EF2F00E91091 /* PBXTargetDependency */,
 			);
 			name = SetCap;
 			productName = SetCap;
@@ -196,9 +521,26 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					934165692A3673030032F64B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					934165722A3673030032F64B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9388FC642A1C427C0083A500;
+					};
+					9341658C2A36731B0032F64B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					934165952A36731B0032F64B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9388FC642A1C427C0083A500;
+					};
+					9343FBD72A37EF2F00E91091 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					9388FC642A1C427C0083A500 = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -228,11 +570,52 @@
 				9388FC642A1C427C0083A500 /* SetCap */,
 				9388FC7A2A1C427C0083A500 /* SetCapTests */,
 				9388FC842A1C427C0083A500 /* SetCapUITests */,
+				934165692A3673030032F64B /* SetCapCore */,
+				934165722A3673030032F64B /* SetCapCoreTests */,
+				9341658C2A36731B0032F64B /* SetCapUIKit */,
+				934165952A36731B0032F64B /* SetCapUIKitTests */,
+				9343FBD72A37EF2F00E91091 /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		934165682A3673030032F64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165712A3673030032F64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341658B2A36731B0032F64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165942A36731B0032F64B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9343FBD62A37EF2F00E91091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9388FC632A1C427C0083A500 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,15 +643,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		934165662A3673030032F64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934165AB2A36733B0032F64B /* Caption.swift in Sources */,
+				934165B02A3673610032F64B /* ImageMetadata.swift in Sources */,
+				9341656E2A3673030032F64B /* SetCapCore.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9341656F2A3673030032F64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165892A36731B0032F64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
+				934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		934165922A36731B0032F64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9341659E2A36731B0032F64B /* SetCapUIKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9343FBD42A37EF2F00E91091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9388FC612A1C427C0083A500 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */,
 				9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */,
-				9388FC992A1C56700083A500 /* ImageMetadata.swift in Sources */,
 				9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */,
-				9388FC9B2A1C603A0083A500 /* CaptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +716,41 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		934165762A3673030032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934165692A3673030032F64B /* SetCapCore */;
+			targetProxy = 934165752A3673030032F64B /* PBXContainerItemProxy */;
+		};
+		934165782A3673030032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9388FC642A1C427C0083A500 /* SetCap */;
+			targetProxy = 934165772A3673030032F64B /* PBXContainerItemProxy */;
+		};
+		9341657E2A3673030032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934165692A3673030032F64B /* SetCapCore */;
+			targetProxy = 9341657D2A3673030032F64B /* PBXContainerItemProxy */;
+		};
+		934165992A36731B0032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9341658C2A36731B0032F64B /* SetCapUIKit */;
+			targetProxy = 934165982A36731B0032F64B /* PBXContainerItemProxy */;
+		};
+		9341659B2A36731B0032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9388FC642A1C427C0083A500 /* SetCap */;
+			targetProxy = 9341659A2A36731B0032F64B /* PBXContainerItemProxy */;
+		};
+		934165A12A36731B0032F64B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9341658C2A36731B0032F64B /* SetCapUIKit */;
+			targetProxy = 934165A02A36731B0032F64B /* PBXContainerItemProxy */;
+		};
+		9343FBE12A37EF2F00E91091 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9343FBD72A37EF2F00E91091 /* ShareExtension */;
+			targetProxy = 9343FBE02A37EF2F00E91091 /* PBXContainerItemProxy */;
+		};
 		9388FC7D2A1C427C0083A500 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9388FC642A1C427C0083A500 /* SetCap */;
@@ -305,6 +764,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9343FBDD2A37EF2F00E91091 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		9388FC6E2A1C427C0083A500 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -324,6 +791,272 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		934165822A3673030032F64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		934165832A3673030032F64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		934165862A3673030032F64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SetCap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SetCap";
+			};
+			name = Debug;
+		};
+		934165872A3673030032F64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SetCap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SetCap";
+			};
+			name = Release;
+		};
+		934165A52A36731B0032F64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		934165A62A36731B0032F64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		934165A82A36731B0032F64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SetCap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SetCap";
+			};
+			name = Debug;
+		};
+		934165A92A36731B0032F64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SetCap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SetCap";
+			};
+			name = Release;
+		};
+		9343FBE42A37EF2F00E91091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kylejs.dev.SetCap.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9343FBE52A37EF2F00E91091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kylejs.dev.SetCap.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9388FC8D2A1C427C0083A500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,6 +1174,7 @@
 		9388FC902A1C427C0083A500 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
@@ -471,6 +1205,7 @@
 		9388FC912A1C427C0083A500 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
@@ -573,6 +1308,51 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		934165812A3673030032F64B /* Build configuration list for PBXNativeTarget "SetCapCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934165822A3673030032F64B /* Debug */,
+				934165832A3673030032F64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		934165852A3673030032F64B /* Build configuration list for PBXNativeTarget "SetCapCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934165862A3673030032F64B /* Debug */,
+				934165872A3673030032F64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		934165A42A36731B0032F64B /* Build configuration list for PBXNativeTarget "SetCapUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934165A52A36731B0032F64B /* Debug */,
+				934165A62A36731B0032F64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		934165A72A36731B0032F64B /* Build configuration list for PBXNativeTarget "SetCapUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934165A82A36731B0032F64B /* Debug */,
+				934165A92A36731B0032F64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9343FBE32A37EF2F00E91091 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9343FBE42A37EF2F00E91091 /* Debug */,
+				9343FBE52A37EF2F00E91091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9388FC602A1C427C0083A500 /* Build configuration list for PBXProject "SetCap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

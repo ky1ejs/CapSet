@@ -9,7 +9,7 @@ import CoreImage
 import ImageIO
 
 
-struct ImageMetadata {
+public struct ImageMetadata {
     let fNumber: NSNumber?
     let shutterSpeed: NSNumber?
     let iso: NSNumber?
@@ -19,7 +19,7 @@ struct ImageMetadata {
     let focalLength: NSNumber?
     let focalLength35mmEquivalent: NSNumber?
     
-    init(image: CIImage) {
+    public init(image: CIImage) {
         let exif = image.properties.get(kCGImagePropertyExifDictionary)
         let exifAux = image.properties.get(kCGImagePropertyExifAuxDictionary)
         let tiff = image.properties.get(kCGImagePropertyTIFFDictionary)

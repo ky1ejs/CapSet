@@ -7,6 +7,7 @@
 
 import UIKit
 import PhotosUI
+import SetCapUIKit
 
 @MainActor
 class ViewController: UIViewController {

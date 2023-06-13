@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import SetCapCore
 
-class CaptionViewController: UIViewController {
+public class CaptionViewController: UIViewController {
     let image: UIImage
     let metadata: ImageMetadata
     let caption: String
     
-    init(imageData: Data) {
+    public init(imageData: Data) {
         image = UIImage(data: imageData)!
         let ciImage = CIImage(data: imageData)!
         metadata = ImageMetadata(image: ciImage)
@@ -20,17 +21,18 @@ class CaptionViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func loadView() {
+    public override func loadView() {
         view = UIView()
         view.backgroundColor = .white
 
         let imageView = UIImageView(image: image)
         let captionLabel = UILabel()
         captionLabel.text = caption
+        captionLabel.numberOfLines = 0
         view.addSubview(imageView)
         view.addSubview(captionLabel)
 
@@ -98,32 +100,4 @@ extension Array where Element == UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.subviews.forEach(disableTranslation)
     }
-}
-
-
-func createCaption(with metadata: ImageMetadata) -> String {
-    var template =  """
-                    📷 %{body}
-                    🔭 %{lens}
-                    ⚙️ ƒ%{fNumber} | %{shutter_speed} | ISO %{iso}
-                    """
-
-    let metadata = [
-        "body" : metadata.body,
-        "lens" : metadata.lens,
-        "fNumber" : metadata.fNumber?.stringValue,
-        "shutter_speed" : metadata.shutterSpeed?.stringValue,
-        "iso" : metadata.iso?.stringValue,
-    ]
-
-    let variables = template.matches(of: try! Regex("%{.*{!}!%!}"))
-    variables.forEach { match in
-        var key = String(template[match.range])
-        key.removeAll { ["%", "{", "}"].contains($0) }
-        let value = metadata[key]!!
-        template.replaceSubrange(match.range, with: value)
-    }
-
-    return "Caption"
-
 }
