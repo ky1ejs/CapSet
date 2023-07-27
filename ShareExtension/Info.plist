@@ -13,7 +13,7 @@
     SUBQUERY (
         $extensionItem.attachments,
         $attachment,
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.image&quot;
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image"
     ).@count &amp;lt;= 20
 ).@count &amp;gt;= 1</string>
 		</dict>
