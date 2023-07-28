@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42BAFA562A745DC000B8D039 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* SwiftUIView.swift */; };
 		9341656E2A3673030032F64B /* SetCapCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9341656D2A3673030032F64B /* SetCapCore.docc */; };
 		934165742A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341657A2A3673030032F64B /* SetCapCoreTests.swift */; };
@@ -129,6 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42BAFA552A745DC000B8D039 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		9341656A2A3673030032F64B /* SetCapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SetCapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341656C2A3673030032F64B /* SetCapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCapCore.h; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		9388FC5C2A1C427C0083A500 = {
 			isa = PBXGroup;
 			children = (
+				42BAFA552A745DC000B8D039 /* SwiftUIView.swift */,
 				9388FC672A1C427C0083A500 /* SetCap */,
 				9388FC7E2A1C427C0083A500 /* SetCapTests */,
 				9388FC882A1C427C0083A500 /* SetCapUITests */,
@@ -692,6 +695,7 @@
 			files = (
 				9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */,
 				9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */,
+				42BAFA562A745DC000B8D039 /* SwiftUIView.swift in Sources */,
 				9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
