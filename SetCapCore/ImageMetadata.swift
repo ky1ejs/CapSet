@@ -68,16 +68,16 @@ private struct ParsedTiffData {
 
 
 public struct ImageMetadata {
-    var fNumber: NSNumber? { return exifData.fNumber }
-    var shutterSpeed: String?  { return exifData.shutterSpeed }
-    var iso: NSNumber?  { return exifData.iso }
-    var maxAperture: NSNumber?  { return exifData.maxAperture }
-    var focalLength: NSNumber?  { return exifData.focalLength }
-    var focalLength35mmEquivalent: NSNumber?  { return exifData.focalLength35mmEquivalent }
+    public var fNumber: NSNumber? { return exifData.fNumber }
+    public var shutterSpeed: String?  { return exifData.shutterSpeed }
+    public var iso: NSNumber?  { return exifData.iso }
+    public var maxAperture: NSNumber?  { return exifData.maxAperture }
+    public var focalLength: NSNumber?  { return exifData.focalLength }
+    public var focalLength35mmEquivalent: NSNumber?  { return exifData.focalLength35mmEquivalent }
 
-    var lens: String? { return exifAuxData.lens}
+    public var lens: String? { return exifAuxData.lens}
 
-    var body: String? { return tiffData.body }
+    public var body: String? { return tiffData.body }
 
 
     fileprivate let exifData: ParsedExifData

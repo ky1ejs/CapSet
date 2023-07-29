@@ -8,6 +8,7 @@
 import UIKit
 import PhotosUI
 import SetCapUIKit
+import SwiftUI
 
 @MainActor
 class ViewController: UIViewController {
@@ -38,7 +39,7 @@ extension ViewController: PHPickerViewControllerDelegate {
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         _ = results.first!.itemProvider.loadDataRepresentation(for: .jpeg) { data, error in
             DispatchQueue.main.async {
-                let captionVC = CaptionViewController(imageData: data!)
+                let captionVC = UIHostingController(rootView: CaptionPickerView())
                 self.dismiss(animated:true) {
                     self.navigationController?.pushViewController(captionVC, animated: true)
                 }

@@ -27,6 +27,7 @@
 		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
+		934A8A562A74902D00BA20B2 /* Development.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934A8A552A74902D00BA20B2 /* Development.xcassets */; };
 		9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC682A1C427C0083A500 /* AppDelegate.swift */; };
 		9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */; };
 		9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6C2A1C427C0083A500 /* ViewController.swift */; };
@@ -35,7 +36,10 @@
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
+		93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */; };
+		93E0CCBA2A7479D100668F8D /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
+		93E0CCBB2A7479D100668F8D /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,13 @@
 			remoteGlobalIDString = 9388FC642A1C427C0083A500;
 			remoteInfo = SetCap;
 		};
+		93E0CCBC2A7479D100668F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934165692A3673030032F64B;
+			remoteInfo = SetCapCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,6 +146,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		93E0CCBE2A7479D100668F8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93E0CCBB2A7479D100668F8D /* SetCapCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -155,6 +177,7 @@
 		9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9343FBDD2A37EF2F00E91091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9343FBDF2A37EF2F00E91091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934A8A552A74902D00BA20B2 /* Development.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Development.xcassets; sourceTree = "<group>"; };
 		9388FC652A1C427C0083A500 /* SetCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388FC682A1C427C0083A500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +193,7 @@
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
 		9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,7 +292,9 @@
 			isa = PBXGroup;
 			children = (
 				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
+				93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
+				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
 			);
 			path = SetCapUIKit;
@@ -290,6 +316,14 @@
 				9343FBDF2A37EF2F00E91091 /* Info.plist */,
 			);
 			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		934A8A542A74902D00BA20B2 /* DevelopmentAssets */ = {
+			isa = PBXGroup;
+			children = (
+				934A8A552A74902D00BA20B2 /* Development.xcassets */,
+			);
+			path = DevelopmentAssets;
 			sourceTree = "<group>";
 		};
 		9388FC5C2A1C427C0083A500 = {
@@ -422,6 +456,7 @@
 				934165892A36731B0032F64B /* Sources */,
 				9341658A2A36731B0032F64B /* Frameworks */,
 				9341658B2A36731B0032F64B /* Resources */,
+				93E0CCBE2A7479D100668F8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -611,6 +646,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934A8A562A74902D00BA20B2 /* Development.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,6 +715,7 @@
 			files = (
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
 				934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */,
+				93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +816,11 @@
 			isa = PBXTargetDependency;
 			target = 9388FC642A1C427C0083A500 /* SetCap */;
 			targetProxy = 9388FC862A1C427C0083A500 /* PBXContainerItemProxy */;
+		};
+		93E0CCBD2A7479D100668F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934165692A3673030032F64B /* SetCapCore */;
+			targetProxy = 93E0CCBC2A7479D100668F8D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -932,6 +974,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = SetCapUIKit/DevelopmentAssets;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -966,6 +1009,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = SetCapUIKit/DevelopmentAssets;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1205,6 +1249,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SetCap/Info.plist;
@@ -1238,6 +1283,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SetCap/Info.plist;
