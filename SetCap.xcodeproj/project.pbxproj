@@ -25,16 +25,16 @@
 		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
 		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		934A8A572A74949D00BA20B2 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* SwiftUIView.swift */; };
+		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
 		9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC682A1C427C0083A500 /* AppDelegate.swift */; };
 		9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */; };
 		9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6C2A1C427C0083A500 /* ViewController.swift */; };
-		9388FC702A1C427C0083A500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC6E2A1C427C0083A500 /* Main.storyboard */; };
 		9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC712A1C427C0083A500 /* Assets.xcassets */; };
 		9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */; };
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
+		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,7 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		42BAFA552A745DC000B8D039 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		9341656A2A3673030032F64B /* SetCapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SetCapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341656C2A3673030032F64B /* SetCapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCapCore.h; sourceTree = "<group>"; };
@@ -151,7 +151,6 @@
 		9388FC682A1C427C0083A500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9388FC6C2A1C427C0083A500 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9388FC6F2A1C427C0083A500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9388FC712A1C427C0083A500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9388FC742A1C427C0083A500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9388FC762A1C427C0083A500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -162,6 +161,7 @@
 		9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
 		9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
+		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,8 +320,8 @@
 				9388FC682A1C427C0083A500 /* AppDelegate.swift */,
 				9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */,
 				9388FC6C2A1C427C0083A500 /* ViewController.swift */,
-				42BAFA552A745DC000B8D039 /* SwiftUIView.swift */,
-				9388FC6E2A1C427C0083A500 /* Main.storyboard */,
+				93D768742A749E7600931554 /* App.swift */,
+				42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
 				9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */,
 				9388FC762A1C427C0083A500 /* Info.plist */,
@@ -525,7 +525,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					934165692A3673030032F64B = {
 						CreatedOnToolsVersion = 14.1;
@@ -625,7 +625,6 @@
 			files = (
 				9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */,
 				9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */,
-				9388FC702A1C427C0083A500 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +694,8 @@
 			files = (
 				9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */,
 				9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */,
-				934A8A572A74949D00BA20B2 /* SwiftUIView.swift in Sources */,
+				934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */,
+				93D768752A749E7600931554 /* App.swift in Sources */,
 				9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -776,14 +776,6 @@
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
-		9388FC6E2A1C427C0083A500 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9388FC6F2A1C427C0083A500 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -800,6 +792,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -824,8 +817,8 @@
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -839,6 +832,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -863,8 +857,8 @@
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -879,6 +873,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -900,6 +895,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
@@ -938,6 +934,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -969,6 +968,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejs.SetCapUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1195,9 +1197,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1229,9 +1230,8 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
