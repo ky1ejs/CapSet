@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SwiftUIView: View {
-    @State var rotationAngle: Angle = .degrees(0)
-    @State var translation: CGSize = .zero
-    @State var isDragging = false
+    @State private var rotationAngle: Angle = .degrees(0)
+    @State private var translation: CGSize = .zero
+    @State private var isDragging = false
     
     var drag: some Gesture {
         DragGesture()
@@ -34,8 +34,6 @@ struct SwiftUIView: View {
     var body: some View {
         
         VStack() {
-            
-            
             ZStack {
                 Text("SetCap needs permission to use your photo library")
                     .font(.largeTitle)

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42BAFA562A745DC000B8D039 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* SwiftUIView.swift */; };
 		9341656E2A3673030032F64B /* SetCapCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9341656D2A3673030032F64B /* SetCapCore.docc */; };
 		934165742A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341657A2A3673030032F64B /* SetCapCoreTests.swift */; };
@@ -26,6 +25,7 @@
 		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
 		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		934A8A572A74949D00BA20B2 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* SwiftUIView.swift */; };
 		9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC682A1C427C0083A500 /* AppDelegate.swift */; };
 		9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */; };
 		9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC6C2A1C427C0083A500 /* ViewController.swift */; };
@@ -286,7 +286,6 @@
 		9388FC5C2A1C427C0083A500 = {
 			isa = PBXGroup;
 			children = (
-				42BAFA552A745DC000B8D039 /* SwiftUIView.swift */,
 				9388FC672A1C427C0083A500 /* SetCap */,
 				9388FC7E2A1C427C0083A500 /* SetCapTests */,
 				9388FC882A1C427C0083A500 /* SetCapUITests */,
@@ -321,6 +320,7 @@
 				9388FC682A1C427C0083A500 /* AppDelegate.swift */,
 				9388FC6A2A1C427C0083A500 /* SceneDelegate.swift */,
 				9388FC6C2A1C427C0083A500 /* ViewController.swift */,
+				42BAFA552A745DC000B8D039 /* SwiftUIView.swift */,
 				9388FC6E2A1C427C0083A500 /* Main.storyboard */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
 				9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */,
@@ -695,7 +695,7 @@
 			files = (
 				9388FC6D2A1C427C0083A500 /* ViewController.swift in Sources */,
 				9388FC692A1C427C0083A500 /* AppDelegate.swift in Sources */,
-				42BAFA562A745DC000B8D039 /* SwiftUIView.swift in Sources */,
+				934A8A572A74949D00BA20B2 /* SwiftUIView.swift in Sources */,
 				9388FC6B2A1C427C0083A500 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -823,7 +823,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -860,7 +862,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
