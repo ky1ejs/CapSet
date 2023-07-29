@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9388FC7A2A1C427C0083A500"
+               BuildableName = "SetCapTests.xctest"
+               BlueprintName = "SetCapTests"
+               ReferencedContainer = "container:SetCap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9388FC842A1C427C0083A500"
+               BuildableName = "SetCapUITests.xctest"
+               BlueprintName = "SetCapUITests"
+               ReferencedContainer = "container:SetCap.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
