@@ -40,8 +40,11 @@
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
+		93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */; };
+		93E0CCBA2A7479D100668F8D /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 		93E0CCB42A7475E500668F8D /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CCB22A74663F00668F8D /* CaptionView.swift */; };
+		93E0CCBB2A7479D100668F8D /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +118,13 @@
 			remoteGlobalIDString = 9388FC642A1C427C0083A500;
 			remoteInfo = SetCap;
 		};
+		93E0CCBC2A7479D100668F8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934165692A3673030032F64B;
+			remoteInfo = SetCapCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -137,6 +147,17 @@
 			files = (
 				932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */,
 				932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93E0CCBE2A7479D100668F8D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				93E0CCBB2A7479D100668F8D /* SetCapCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +203,7 @@
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		93E0CCB22A74663F00668F8D /* CaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
+		93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +305,7 @@
 				423D10EA2A76C41C000165C4 /* BottomSheetView.swift */,
 				93E0CCB22A74663F00668F8D /* CaptionView.swift */,
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
+				93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
@@ -449,6 +472,7 @@
 				934165892A36731B0032F64B /* Sources */,
 				9341658A2A36731B0032F64B /* Frameworks */,
 				9341658B2A36731B0032F64B /* Resources */,
+				93E0CCBE2A7479D100668F8D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -709,6 +733,7 @@
 				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
 				934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */,
 				93E0CCB42A7475E500668F8D /* CaptionView.swift in Sources */,
+				93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +837,11 @@
 			isa = PBXTargetDependency;
 			target = 9388FC642A1C427C0083A500 /* SetCap */;
 			targetProxy = 9388FC862A1C427C0083A500 /* PBXContainerItemProxy */;
+		};
+		93E0CCBD2A7479D100668F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934165692A3673030032F64B /* SetCapCore */;
+			targetProxy = 93E0CCBC2A7479D100668F8D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
