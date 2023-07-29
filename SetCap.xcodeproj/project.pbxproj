@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		9341656E2A3673030032F64B /* SetCapCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9341656D2A3673030032F64B /* SetCapCore.docc */; };
 		934165742A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341657A2A3673030032F64B /* SetCapCoreTests.swift */; };
 		9341657C2A3673030032F64B /* SetCapCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341656C2A3673030032F64B /* SetCapCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9341657F2A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
-		934165802A3673030032F64B /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 934165902A36731B0032F64B /* SetCapUIKit.docc */; };
 		934165972A36731B0032F64B /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
 		9341659E2A36731B0032F64B /* SetCapUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */; };
 		9341659F2A36731B0032F64B /* SetCapUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341658F2A36731B0032F64B /* SetCapUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		934165A22A36731B0032F64B /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
-		934165A32A36731B0032F64B /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		934165AB2A36733B0032F64B /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934165AA2A36733B0032F64B /* Caption.swift */; };
 		934165B02A3673610032F64B /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
 		934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */; };
@@ -38,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		932AE1442A758BC4004EC0F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 934165692A3673030032F64B;
+			remoteInfo = SetCapCore;
+		};
 		934165752A3673030032F64B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
@@ -121,8 +129,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				934165802A3673030032F64B /* SetCapCore.framework in Embed Frameworks */,
-				934165A32A36731B0032F64B /* SetCapUIKit.framework in Embed Frameworks */,
+				932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */,
+				932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +426,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				932AE1452A758BC4004EC0F7 /* PBXTargetDependency */,
 			);
 			name = SetCapUIKit;
 			productName = SetCapUIKit;
@@ -472,8 +482,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				9341657E2A3673030032F64B /* PBXTargetDependency */,
 				934165A12A36731B0032F64B /* PBXTargetDependency */,
+				9341657E2A3673030032F64B /* PBXTargetDependency */,
 				9343FBE12A37EF2F00E91091 /* PBXTargetDependency */,
 			);
 			name = SetCap;
@@ -720,6 +730,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		932AE1452A758BC4004EC0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 934165692A3673030032F64B /* SetCapCore */;
+			targetProxy = 932AE1442A758BC4004EC0F7 /* PBXContainerItemProxy */;
+		};
 		934165762A3673030032F64B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 934165692A3673030032F64B /* SetCapCore */;
