@@ -39,8 +39,8 @@
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
+		938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC8952A786D1100D5DA6A /* CaptionView.swift */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
-		93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,8 +178,8 @@
 		9388FC892A1C427C0083A500 /* SetCapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITests.swift; sourceTree = "<group>"; };
 		9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
+		938DC8952A786D1100D5DA6A /* CaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
-				93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */,
+				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
@@ -711,8 +711,7 @@
 			files = (
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
 				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
-				93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */,
-				93E0CCB42A7475E500668F8D /* CaptionPickerView.swift in Sources */,
+				938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
