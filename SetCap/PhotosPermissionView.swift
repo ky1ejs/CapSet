@@ -12,8 +12,7 @@ struct PhotosPermissionView: View {
     @State private var rotationAngle: Angle = .degrees(0)
     @State private var translation: CGSize = .zero
     @State private var isDragging = false
-
-    @Binding var state: AuthenticationState
+    @EnvironmentObject private var photoService: PhotoLibraryService
     
     var drag: some Gesture {
         DragGesture()
@@ -160,9 +159,7 @@ struct PhotosPermissionView: View {
             
             HStack {
                 Button {
-                    PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
-                        state.state = status
-                    }
+                    photoService.requestAccess()
                 } label: {
                     Text("Continue")
                         .fontWeight(.medium)
@@ -205,6 +202,7 @@ struct PhotosPermissionView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        PhotosPermissionView(state: .constant(AuthenticationState(state: .notDetermined)))
+        PhotosPermissionView()
+            .environmentObject(PhotoLibraryService())
     }
 }

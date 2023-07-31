@@ -6,22 +6,19 @@
 //
 
 import SwiftUI
-import Photos
-
-struct AuthenticationState {
-    var state: PHAuthorizationStatus
-}
 
 @main
 struct SetCapApp: App {
-    @State var state: AuthenticationState = AuthenticationState(state: PHPhotoLibrary.authorizationStatus(for: .readWrite))
+    @ObservedObject private var service = PhotoLibraryService()
 
     var body: some Scene {
         WindowGroup {
-            if state.state == .authorized {
-                VStack{ Text("Yay")}
+            if service.authState == .authorized {
+                NavigationStack {
+                    PhotoPicker().environmentObject(service)
+                }
             } else {
-                PhotosPermissionView(state: $state)
+                PhotosPermissionView().environmentObject(service)
             }
         }
     }
