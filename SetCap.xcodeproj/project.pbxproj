@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423D10EB2A76C41C000165C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EA2A76C41C000165C4 /* BottomSheetView.swift */; };
 		931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */; };
+		423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EC2A76C8E7000165C4 /* MetadataView.swift */; };
 		932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
@@ -142,6 +144,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		423D10EA2A76C41C000165C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		423D10EC2A76C8E7000165C4 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
 		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFetchResultCollection.swift; sourceTree = "<group>"; };
 		932AE1472A759392004EC0F7 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
@@ -275,7 +279,10 @@
 		9341658E2A36731B0032F64B /* SetCapUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
+				423D10EA2A76C41C000165C4 /* BottomSheetView.swift */,
 				93E0CCB22A74663F00668F8D /* CaptionView.swift */,
+				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
@@ -699,6 +706,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
+				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
+				934165BC2A36744D0032F64B /* CaptionViewController.swift in Sources */,
 				93E0CCB42A7475E500668F8D /* CaptionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
