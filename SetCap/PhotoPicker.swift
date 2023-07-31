@@ -36,7 +36,7 @@ extension PhotoPicker {
                     }
                 }
             }
-        }
+        }.navigationBarItems(trailing: Button(action: { fatalError("Break the world") }) { Text("Hit me")})
     }
 }
 
