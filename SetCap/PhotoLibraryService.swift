@@ -32,7 +32,7 @@ class PhotoLibraryService: ObservableObject {
         let fetchOptions = PHFetchOptions()
         fetchOptions.includeHiddenAssets = false
         fetchOptions.sortDescriptors = [
-            NSSortDescriptor(key: "creationDate", ascending: false)
+            NSSortDescriptor(key: "creationDate", ascending: true)
         ]
         DispatchQueue.main.async {
             self.results.fetchResult = PHAsset.fetchAssets(with: .image, options: fetchOptions)
