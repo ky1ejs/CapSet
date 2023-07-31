@@ -325,7 +325,6 @@
 				9343FBD92A37EF2F00E91091 /* ShareExtension */,
 				934165522A36721F0032F64B /* Frameworks */,
 				9388FC662A1C427C0083A500 /* Products */,
-				938DC8932A7855B300D5DA6A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,13 +376,6 @@
 				9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */,
 			);
 			path = SetCapUITests;
-			sourceTree = "<group>";
-		};
-		938DC8932A7855B300D5DA6A /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
