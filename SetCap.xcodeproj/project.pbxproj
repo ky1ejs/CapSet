@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */; };
-		423D10EB2A76C41C000165C4 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EA2A76C41C000165C4 /* BottomSheetView.swift */; };
 		423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EC2A76C8E7000165C4 /* MetadataView.swift */; };
+		931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */; };
 		932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
@@ -156,7 +155,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		423D10EA2A76C41C000165C4 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		423D10EC2A76C8E7000165C4 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
 		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFetchResultCollection.swift; sourceTree = "<group>"; };
@@ -293,7 +291,6 @@
 			isa = PBXGroup;
 			children = (
 				93E0CCB22A74663F00668F8D /* CaptionView.swift */,
-				9388FC9A2A1C603A0083A500 /* CaptionViewController.swift */,
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
 				93E0CCB22A74663F00668F8D /* CaptionPickerView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
@@ -342,6 +339,7 @@
 				9343FBD92A37EF2F00E91091 /* ShareExtension */,
 				934165522A36721F0032F64B /* Frameworks */,
 				9388FC662A1C427C0083A500 /* Products */,
+				938DC8932A7855B300D5DA6A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -393,6 +391,13 @@
 				9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */,
 			);
 			path = SetCapUITests;
+			sourceTree = "<group>";
+		};
+		938DC8932A7855B300D5DA6A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

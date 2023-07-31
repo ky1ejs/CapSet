@@ -38,26 +38,13 @@ public struct CaptionView: View {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFit()
-                        .background(.blue)
                     Spacer()
                 }
                 .sheet(isPresented: $showBottomSheet){
                     VStack(alignment: .leading, spacing: 0) {
-                        Text(metadata.body ?? "Unknown body").border(.white).background(.green)
-                        VStack(alignment: .leading) {
-                            Text(metadata.lens ?? "-").border(.purple).background(.yellow)
-                            HStack {
-                                Text(metadata.focalLength?.stringValue.appending("mm") ?? "")
-                                Spacer()
-                                HStack {
-                                    Text("ƒ\(metadata.fNumber?.stringValue ?? "-")")
-                                    Text("ISO \(metadata.iso?.stringValue ?? "")")
-                                    Text(metadata.shutterSpeed ?? "")
-                                }
-                            }
-                        }
+                        MetadataView(metadata: metadata)
                         Spacer()
-                    }.padding(20).presentationDetents([.fraction(0.32), .fraction(0.8)]).interactiveDismissDisabled()
+                    }.padding(.top, 24).presentationDetents([.fraction(0.35), .fraction(0.8)]).interactiveDismissDisabled()
                 }
             } else {
                 ProgressView()
