@@ -17,6 +17,7 @@
 		932AE14C2A75F301004EC0F7 /* PhotoThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AE14B2A75F301004EC0F7 /* PhotoThumbnailView.swift */; };
 		9332FC822A78777A007AEF33 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC812A78777A007AEF33 /* Sentry */; };
 		9332FC842A78777A007AEF33 /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC832A78777A007AEF33 /* SentrySwiftUI */; };
+		9332FC872A788210007AEF33 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC862A788210007AEF33 /* Sentry */; };
 		9341656E2A3673030032F64B /* SetCapCore.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9341656D2A3673030032F64B /* SetCapCore.docc */; };
 		934165742A3673030032F64B /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		9341657B2A3673030032F64B /* SetCapCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341657A2A3673030032F64B /* SetCapCoreTests.swift */; };
@@ -238,6 +239,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9332FC872A788210007AEF33 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +538,9 @@
 				9388FC7D2A1C427C0083A500 /* PBXTargetDependency */,
 			);
 			name = SetCapTests;
+			packageProductDependencies = (
+				9332FC862A788210007AEF33 /* Sentry */,
+			);
 			productName = SetCapTests;
 			productReference = 9388FC7B2A1C427C0083A500 /* SetCapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1302,6 +1307,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kylejs.dev.SetCapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1321,6 +1327,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = kylejs.dev.SetCapTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -1473,6 +1480,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = SentrySwiftUI;
+		};
+		9332FC862A788210007AEF33 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
