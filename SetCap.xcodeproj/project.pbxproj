@@ -149,7 +149,6 @@
 		932AE1472A759392004EC0F7 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
 		932AE14B2A75F301004EC0F7 /* PhotoThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailView.swift; sourceTree = "<group>"; };
-		934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
 		9341656A2A3673030032F64B /* SetCapCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SetCapCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341656C2A3673030032F64B /* SetCapCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCapCore.h; sourceTree = "<group>"; };
 		9341656D2A3673030032F64B /* SetCapCore.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SetCapCore.docc; sourceTree = "<group>"; };
@@ -250,7 +249,6 @@
 		934165522A36721F0032F64B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				934165532A36721F0032F64B /* UniformTypeIdentifiers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
