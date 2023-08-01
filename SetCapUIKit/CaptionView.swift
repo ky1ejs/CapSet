@@ -44,7 +44,7 @@ public struct CaptionView: View {
                     VStack(alignment: .leading, spacing: 0) {
                         MetadataView(metadata: metadata)
                         Spacer()
-                    }.padding(.top, 24).presentationDetents([.fraction(0.35), .fraction(0.8)]).interactiveDismissDisabled()
+                    }.padding(.top, 24).presentationDetents([.fraction(0.35), .fraction(0.8)]).interactiveDismissDisabled().presentationBackgroundInteraction(.enabled)
                 }
             } else {
                 ProgressView()
