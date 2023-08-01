@@ -7,6 +7,8 @@
 #  
 
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
-if [[ "$BRANCH" == "main" ]]; then
+echo "on branch: $BRANCH"
+
+if [[ "$BRANCH" == "main" || "$BRANCH" == "release" ]]; then
   brew install getsentry/tools/sentry-cli
 fi
