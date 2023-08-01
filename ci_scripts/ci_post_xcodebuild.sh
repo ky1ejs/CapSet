@@ -12,7 +12,7 @@ export SENTRY_PROJECT=setcap
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 echo "on branch: $BRANCH"
 
-if [[ "$BRANCH" != "main" || "$BRANCH" != "release" ]]; then
+if [[ "$BRANCH" != "main" && "$BRANCH" != "release" ]]; then
   echo "Skipping - dSYM upload to Sentry is only done on main"
   exit 0
 fi
