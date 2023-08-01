@@ -331,8 +331,8 @@
 		9388FC5C2A1C427C0083A500 = {
 			isa = PBXGroup;
 			children = (
-				9332FC882A7887D5007AEF33 /* ci_scripts */,
 				9332FC852A787F05007AEF33 /* SetCapTestPlan.xctestplan */,
+				9332FC882A7887D5007AEF33 /* ci_scripts */,
 				9388FC672A1C427C0083A500 /* SetCap */,
 				9388FC7E2A1C427C0083A500 /* SetCapTests */,
 				9388FC882A1C427C0083A500 /* SetCapUITests */,
