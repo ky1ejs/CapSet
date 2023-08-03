@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EC2A76C8E7000165C4 /* MetadataView.swift */; };
+		423D10EF2A7BBB75000165C4 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EE2A7BBB75000165C4 /* IconView.swift */; };
 		93075EA12A79B6A100F5F0A3 /* Development.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93075EA02A79B6A100F5F0A3 /* Development.xcassets */; };
 		931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */; };
 		932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -147,6 +148,7 @@
 
 /* Begin PBXFileReference section */
 		423D10EC2A76C8E7000165C4 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
+		423D10EE2A7BBB75000165C4 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		93075EA02A79B6A100F5F0A3 /* Development.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Development.xcassets; sourceTree = "<group>"; };
 		931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFetchResultCollection.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			children = (
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
 				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
+				423D10EE2A7BBB75000165C4 /* IconView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
@@ -730,6 +733,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
+				423D10EF2A7BBB75000165C4 /* IconView.swift in Sources */,
 				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
 				938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */,
 			);
