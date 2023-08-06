@@ -42,7 +42,9 @@ public struct CaptionView: View {
                 }
                 .sheet(isPresented: $showBottomSheet){
                     VStack(alignment: .leading, spacing: 0) {
-                        MetadataView(metadata: metadata)
+                        ScrollView {
+                            MetadataView(metadata: metadata)
+                        }
                         Spacer()
                     }.padding(.top, 24).presentationDetents([.fraction(0.35), .fraction(0.8)]).interactiveDismissDisabled().presentationBackgroundInteraction(.enabled)
                 }
