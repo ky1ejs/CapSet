@@ -47,9 +47,9 @@ public struct CaptionView: View {
                         }
                         Spacer()
                     }.padding(.top, 24)
-                    .presentationDetents([.fraction(0.35), .fraction(0.8)])
-                    .interactiveDismissDisabled()
-                    .presentationBackgroundInteraction(.enabled)
+                        .presentationDetents([.height(160), .fraction(0.8)])
+                        .interactiveDismissDisabled()
+                        .presentationBackgroundInteraction(.enabled)
                 }
             } else {
                 ProgressView()
