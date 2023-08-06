@@ -29,15 +29,13 @@ struct TemplateView: View {
     let templateTitle: String
     let caption: String
 
-    init(_ template: String,_ metadata: String) {
+    init(_ template: String, _ metadata: String) {
         self.templateTitle = template
         self.caption = metadata
     }
-    
-    
 
     var body: some View {
-        
+
         VStack(alignment: .leading) {
             HStack(alignment: .bottom) {
                 Text(templateTitle)
@@ -47,7 +45,7 @@ struct TemplateView: View {
                 Spacer()
                 Button {
                 } label: {
-                    Label("Copy" , systemImage: "doc.on.doc.fill")
+                    Label("Copy", systemImage: "doc.on.doc.fill")
                         .fontWeight(.medium)
                         .foregroundColor(.blue)
                 }
@@ -55,10 +53,10 @@ struct TemplateView: View {
                 .controlSize(.small)
             }
             .padding([.top, .leading, .trailing])
-            
+
             Text(caption)
                 .padding([.leading, .bottom])
-            
+
         }
         .overlay(
             RoundedRectangle(cornerRadius: 16)
@@ -73,25 +71,25 @@ struct MetadataView: View {
     let metadata: ImageMetadata
 
     private static let CORNER_RADIUS = CGFloat(6)
-    
+
     var body: some View {
-        
+
         VStack(alignment: .leading) {
-            
-            VStack{
-                HStack() {
+
+            VStack {
+                HStack {
                     Text(metadata.body ?? "-")
                         .font(.system(size: 16.0, weight: .medium, design: .rounded))
-                    
+
                     Spacer()
                     PillView("RAW")
-                    
+
                 }
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .background(.ultraThinMaterial)
-                
-                HStack() {
+
+                HStack {
                     if let lens = metadata.lens {
                         Text(lens)
                             .font(.system(size: 16.0))
@@ -108,8 +106,8 @@ struct MetadataView: View {
                     Spacer()
                 }
                 .padding(8)
-                
-                HStack() {
+
+                HStack {
                     PillView("\(metadata.focalLength?.stringValue ?? "-")mm")
                     Spacer()
                     PillView("ƒ\(metadata.fNumber?.stringValue ?? "-")")
@@ -122,36 +120,30 @@ struct MetadataView: View {
                 }
                 .frame(alignment: .topLeading)
                 .padding(8)
-                
-                
-                
-                
+
             }
             .background(.ultraThinMaterial)
             .cornerRadius(6)
             .padding(.horizontal, 16)
-            
-            
+
             Text("Choose a template")
                 .fontWeight(.medium)
                 .foregroundColor(Color.primary)
                 .padding()
-           
-            
-           TemplateView("Emoji", createCaption(with: metadata))
-            
-            
+
+            TemplateView("Emoji", createCaption(with: metadata))
+
         }
-        
-        
+
     }
 }
 
-var linearGradient: LinearGradient{
-    LinearGradient(colors: [.clear, .white.opacity(0.5),.clear, .white.opacity(0.3), .clear], startPoint: .topLeading, endPoint: .bottomTrailing)
+var linearGradient: LinearGradient {
+    LinearGradient(
+        colors: [.clear, .white.opacity(0.5), .clear, .white.opacity(0.3), .clear],
+        startPoint: .topLeading, endPoint: .bottomTrailing
+    )
 }
-
-
 
 struct MetadataView_Previews: PreviewProvider {
 

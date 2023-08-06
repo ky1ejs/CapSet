@@ -40,13 +40,16 @@ public struct CaptionView: View {
                         .scaledToFit()
                     Spacer()
                 }
-                .sheet(isPresented: $showBottomSheet){
+                .sheet(isPresented: $showBottomSheet) {
                     VStack(alignment: .leading, spacing: 0) {
                         ScrollView {
                             MetadataView(metadata: metadata)
                         }
                         Spacer()
-                    }.padding(.top, 24).presentationDetents([.fraction(0.35), .fraction(0.8)]).interactiveDismissDisabled().presentationBackgroundInteraction(.enabled)
+                    }.padding(.top, 24)
+                    .presentationDetents([.fraction(0.35), .fraction(0.8)])
+                    .interactiveDismissDisabled()
+                    .presentationBackgroundInteraction(.enabled)
                 }
             } else {
                 ProgressView()
@@ -56,13 +59,13 @@ public struct CaptionView: View {
             let imageData = await loader.load()
             self.image = UIImage(data: imageData)
             self.metadata = ImageMetadata(image: CIImage(data: imageData)!)
-        }.onAppear() {
+        }.onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
                 showBottomSheet = true
             }
-        }.onDisappear() {
+        }.onDisappear {
             showBottomSheet = false
-        }.toolbar() {
+        }.toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     showBottomSheet = false
@@ -86,4 +89,3 @@ struct CaptionPickerView_Previews: PreviewProvider {
         CaptionView(loader: PassedImageLoader(imageData: imageData.data))
     }
 }
-

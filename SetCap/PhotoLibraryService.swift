@@ -57,7 +57,7 @@ class PhotoLibraryService: ObservableObject {
             self?.imageCachingManager.requestImageDataAndOrientation(
                 for: asset,
                 options: options,
-                resultHandler: { data, id, orientation, info in
+                resultHandler: { data, _, _, info in
                     if let error = info?[PHImageErrorKey] as? Error {
                         continuation.resume(throwing: error)
                         return
@@ -75,4 +75,3 @@ class PhotoLibraryService: ObservableObject {
         }
     }
 }
-

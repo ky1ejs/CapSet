@@ -30,7 +30,12 @@ extension PhotoPicker {
             ) {
                 ForEach(photoLibraryService.results, id: \.self) { asset in
                     NavigationLink {
-                        CaptionView(loader: Thing(service: photoLibraryService, id: asset.localIdentifier)).navigationTitle("Photo")
+                        CaptionView(loader:
+                                        Thing(service:
+                                                photoLibraryService,
+                                              id: asset.localIdentifier
+                                        ))
+                            .navigationTitle("Photo")
                     } label: {
                         PhotoThumbnailView(assetLocalId: asset.localIdentifier)
                     }
@@ -45,6 +50,8 @@ struct Thing: CaptionViewImageLoader {
     let id: String
 
     func load() async -> Data {
+        // swiftlint:disable force_try
         return try! await service.fetchImage(byLocalIdentifier: id)!
+        // swiftlint:enable force_try
     }
 }

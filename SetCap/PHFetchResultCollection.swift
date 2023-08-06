@@ -19,4 +19,3 @@ struct PHFetchResultCollection: RandomAccessCollection, Equatable {
         fetchResult.object(at: fetchResult.count - position - 1)
     }
 }
-
