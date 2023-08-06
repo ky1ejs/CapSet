@@ -36,4 +36,3 @@ struct SetCapApp: App {
         }
     }
 }
-
