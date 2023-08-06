@@ -23,8 +23,8 @@ struct PassedImageLoader: CaptionViewImageLoader {
 public struct CaptionView: View {
     @State private var metadata: ImageMetadata?
     @State private var image: UIImage?
-    @State private var showBottomSheet = true
-
+    @State private var showBottomSheet = false
+    @Environment(\.dismiss) private var dismiss
     private let loader: CaptionViewImageLoader
 
     public init(loader: CaptionViewImageLoader) {
@@ -54,7 +54,24 @@ public struct CaptionView: View {
             let imageData = await loader.load()
             self.image = UIImage(data: imageData)
             self.metadata = ImageMetadata(image: CIImage(data: imageData)!)
-        }
+        }.onAppear() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
+                showBottomSheet = true
+            }
+        }.onDisappear() {
+            showBottomSheet = false
+        }.toolbar() {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    showBottomSheet = false
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left").font(Font.body.weight(.bold))
+                    Text("Back")
+                }
+
+            }
+        }.navigationBarBackButtonHidden()
     }
 }
 
