@@ -15,11 +15,11 @@ public func createCaption(with metadata: ImageMetadata) -> String {
                     """
 
     let metadata = [
-        "body" : metadata.body!,
-        "lens" : metadata.lens!,
-        "fNumber" : metadata.fNumber!.stringValue,
-        "shutter_speed" : metadata.shutterSpeed!,
-        "iso" : metadata.iso!.stringValue,
+        "body" : metadata.body ?? "-",
+        "lens" : metadata.lens ?? "-",
+        "fNumber" : metadata.fNumber?.stringValue ?? "-",
+        "shutter_speed" : metadata.shutterSpeed ?? "-",
+        "iso" : metadata.iso?.stringValue ?? "-",
     ]
 
     let regex = try! Regex("%{(?<name>[A-Z]*_*[A-Z]*)}").ignoresCase()
