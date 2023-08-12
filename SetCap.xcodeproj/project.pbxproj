@@ -14,9 +14,8 @@
 		932AE1402A758BA7004EC0F7 /* SetCapCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1412A758BA7004EC0F7 /* SetCapUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
-		932AE1482A759392004EC0F7 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AE1472A759392004EC0F7 /* PhotoPicker.swift */; };
 		932AE14A2A759529004EC0F7 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */; };
-		932AE14C2A75F301004EC0F7 /* PhotoThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AE14B2A75F301004EC0F7 /* PhotoThumbnailView.swift */; };
+		932AE14C2A75F301004EC0F7 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AE14B2A75F301004EC0F7 /* PhotoCollectionViewCell.swift */; };
 		9332FC822A78777A007AEF33 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC812A78777A007AEF33 /* Sentry */; };
 		9332FC842A78777A007AEF33 /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC832A78777A007AEF33 /* SentrySwiftUI */; };
 		9332FC872A788210007AEF33 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 9332FC862A788210007AEF33 /* Sentry */; };
@@ -35,7 +34,9 @@
 		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
 		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		934783802A87CF9D00D29913 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */; };
 		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
+		935612162A87FEDD009F35C4 /* Development.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93075EA02A79B6A100F5F0A3 /* Development.xcassets */; };
 		9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC712A1C427C0083A500 /* Assets.xcassets */; };
 		9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */; };
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
@@ -150,9 +151,8 @@
 		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		93075EA02A79B6A100F5F0A3 /* Development.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Development.xcassets; sourceTree = "<group>"; };
 		931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFetchResultCollection.swift; sourceTree = "<group>"; };
-		932AE1472A759392004EC0F7 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
-		932AE14B2A75F301004EC0F7 /* PhotoThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailView.swift; sourceTree = "<group>"; };
+		932AE14B2A75F301004EC0F7 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		9332FC852A787F05007AEF33 /* SetCapTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = SetCapTestPlan.xctestplan; path = SetCap.xcodeproj/SetCapTestPlan.xctestplan; sourceTree = "<group>"; };
 		9332FC892A7887EF007AEF33 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		9332FC8A2A788892007AEF33 /* ci_post_xcodebuild.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_xcodebuild.sh; sourceTree = "<group>"; };
@@ -171,8 +171,9 @@
 		9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9343FBDD2A37EF2F00E91091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9343FBDF2A37EF2F00E91091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9347837E2A803FDE00D29913 /* .swiftlint.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; tabWidth = 2; };
 		9347837C2A80396700D29913 /* fixing-sheet-presentaiton-animation-on-push.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "fixing-sheet-presentaiton-animation-on-push.md"; sourceTree = "<group>"; };
+		9347837E2A803FDE00D29913 /* .swiftlint.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; tabWidth = 2; };
+		9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
 		9388FC652A1C427C0083A500 /* SetCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388FC712A1C427C0083A500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9388FC742A1C427C0083A500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -297,7 +298,6 @@
 				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
 				423D10EE2A7BBB75000165C4 /* IconView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
-				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
 			);
 			path = SetCapUIKit;
@@ -344,6 +344,7 @@
 				9332FC852A787F05007AEF33 /* SetCapTestPlan.xctestplan */,
 				9347837B2A80394900D29913 /* journeys */,
 				9332FC882A7887D5007AEF33 /* ci_scripts */,
+				934A8A542A74902D00BA20B2 /* DevelopmentAssets */,
 				9388FC672A1C427C0083A500 /* SetCap */,
 				9388FC7E2A1C427C0083A500 /* SetCapTests */,
 				9388FC882A1C427C0083A500 /* SetCapUITests */,
@@ -377,10 +378,10 @@
 			children = (
 				93D768742A749E7600931554 /* App.swift */,
 				42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */,
-				932AE1472A759392004EC0F7 /* PhotoPicker.swift */,
+				9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */,
 				932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */,
 				931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */,
-				932AE14B2A75F301004EC0F7 /* PhotoThumbnailView.swift */,
+				932AE14B2A75F301004EC0F7 /* PhotoCollectionViewCell.swift */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
 				9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */,
 				9388FC762A1C427C0083A500 /* Info.plist */,
@@ -697,6 +698,7 @@
 			files = (
 				9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */,
 				9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */,
+				935612162A87FEDD009F35C4 /* Development.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,12 +790,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				932AE14C2A75F301004EC0F7 /* PhotoThumbnailView.swift in Sources */,
+				934783802A87CF9D00D29913 /* PhotoPickerViewController.swift in Sources */,
+				932AE14C2A75F301004EC0F7 /* PhotoCollectionViewCell.swift in Sources */,
 				932AE14A2A759529004EC0F7 /* PhotoLibraryService.swift in Sources */,
 				934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */,
 				93D768752A749E7600931554 /* App.swift in Sources */,
 				931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */,
-				932AE1482A759392004EC0F7 /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,7 +1006,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = SetCapUIKit/DevelopmentAssets;
+				DEVELOPMENT_ASSET_PATHS = DevelopmentAssets;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1043,7 +1045,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_ASSET_PATHS = SetCapUIKit/DevelopmentAssets;
+				DEVELOPMENT_ASSET_PATHS = DevelopmentAssets;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1297,7 +1299,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = DevelopmentAssets;
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SetCap/Info.plist;
@@ -1331,7 +1333,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_ASSET_PATHS = DevelopmentAssets;
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SetCap/Info.plist;

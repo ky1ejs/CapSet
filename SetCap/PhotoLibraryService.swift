@@ -19,7 +19,7 @@ class PhotoLibraryService: ObservableObject {
     @Published var authState: PHAuthorizationStatus = PHPhotoLibrary.authorizationStatus(for: ACCESS_LEVEL)
     @Published var results = PHFetchResultCollection(fetchResult: .init())
 
-    private let imageCachingManager = PHCachingImageManager()
+    private let imageCachingManager = PHCachingImageManager.default()
 
     typealias PHAssetLocalIdentifier = String
 
@@ -28,7 +28,6 @@ class PhotoLibraryService: ObservableObject {
     }
 
     func fetchAllPhotos() {
-        imageCachingManager.allowsCachingHighQualityImages = false
         let fetchOptions = PHFetchOptions()
         fetchOptions.includeHiddenAssets = false
         fetchOptions.sortDescriptors = [
@@ -64,6 +63,36 @@ class PhotoLibraryService: ObservableObject {
                     }
                     continuation.resume(returning: data)
                 })
+        }
+    }
+
+    func fetchImage(byLocalIdentifier localId: PHAssetLocalIdentifier, forSize size: CGSize) async throws -> UIImage? {
+        let results = PHAsset.fetchAssets(
+            withLocalIdentifiers: [localId],
+            options: nil
+        )
+        guard let asset = results.firstObject else {
+            throw QueryError.noFound
+        }
+        let options = PHImageRequestOptions()
+        options.deliveryMode = .opportunistic
+        options.resizeMode = .fast
+        options.isNetworkAccessAllowed = true
+        options.isSynchronous = true
+        return try await withCheckedThrowingContinuation { [weak self] continuation in
+            /// Use the imageCachingManager to fetch the image
+            self?.imageCachingManager.requestImage(
+                for: asset,
+                targetSize: size,
+                contentMode: .aspectFill,
+                options: options,
+                resultHandler: { image, info in
+                    if let error = info?[PHImageErrorKey] as? Error {
+                        continuation.resume(throwing: error)
+                        return
+                    }
+                    continuation.resume(returning: image)
+            })
         }
     }
 

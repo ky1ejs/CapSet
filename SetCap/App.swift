@@ -28,8 +28,8 @@ struct SetCapApp: App {
         WindowGroup {
             if service.authState == .authorized {
                 NavigationStack {
-                    PhotoPicker().environmentObject(service)
-                }
+                    PhotoPickerViewControllerSwiftUI()
+                }.environmentObject(service)
             } else {
                 PhotosPermissionView().environmentObject(service)
             }
