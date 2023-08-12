@@ -8,18 +8,6 @@
 import SwiftUI
 import SetCapCore
 
-public protocol CaptionViewImageLoader {
-    func load() async -> Data
-}
-
-struct PassedImageLoader: CaptionViewImageLoader {
-    let imageData: Data
-
-    func load() async -> Data {
-        return imageData
-    }
-}
-
 public struct CaptionView: View {
     @State private var metadata: ImageMetadata?
     @State private var image: UIImage?
@@ -80,9 +68,19 @@ public struct CaptionView: View {
     }
 }
 
-class Thing {}
+public protocol CaptionViewImageLoader {
+    func load() async -> Data
+}
 
 struct CaptionPickerView_Previews: PreviewProvider {
+    struct PassedImageLoader: CaptionViewImageLoader {
+        let imageData: Data
+
+        func load() async -> Data {
+            return imageData
+        }
+    }
+
     static var previews: some View {
         let bundle = Bundle(identifier: "dev.kylejs.SetCapUIKit")!
         let imageData = NSDataAsset(name: "parker", bundle: bundle)!

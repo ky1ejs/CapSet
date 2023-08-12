@@ -44,6 +44,7 @@ struct TemplateView: View {
                     .padding(.bottom, 8)
                 Spacer()
                 Button {
+                    copyToPasteboard()
                 } label: {
                     Label("Copy", systemImage: "doc.on.doc.fill")
                         .fontWeight(.medium)
@@ -65,6 +66,9 @@ struct TemplateView: View {
         .padding(.horizontal, 16)
     }
 
+    func copyToPasteboard() {
+        UIPasteboard.general.string = caption
+    }
 }
 
 struct MetadataView: View {
