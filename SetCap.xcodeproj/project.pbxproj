@@ -32,7 +32,6 @@
 		934165AB2A36733B0032F64B /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934165AA2A36733B0032F64B /* Caption.swift */; };
 		934165B02A3673610032F64B /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
 		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
-		9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		934783802A87CF9D00D29913 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */; };
 		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
@@ -43,6 +42,7 @@
 		9388FC8A2A1C427C0083A500 /* SetCapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC892A1C427C0083A500 /* SetCapUITests.swift */; };
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
 		938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC8952A786D1100D5DA6A /* CaptionView.swift */; };
+		93B6D5772A88402E009CF4AE /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +117,13 @@
 			remoteGlobalIDString = 9388FC642A1C427C0083A500;
 			remoteInfo = SetCap;
 		};
+		93B6D5792A88402E009CF4AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9388FC5D2A1C427C0083A500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341658C2A36731B0032F64B;
+			remoteInfo = SetCapUIKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -169,7 +176,6 @@
 		934165AA2A36733B0032F64B /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
 		9343FBD82A37EF2F00E91091 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		9343FBDD2A37EF2F00E91091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		9343FBDF2A37EF2F00E91091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9347837C2A80396700D29913 /* fixing-sheet-presentaiton-animation-on-push.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "fixing-sheet-presentaiton-animation-on-push.md"; sourceTree = "<group>"; };
 		9347837E2A803FDE00D29913 /* .swiftlint.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; tabWidth = 2; };
@@ -224,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B6D5772A88402E009CF4AE /* SetCapUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */,
-				9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */,
 				9343FBDF2A37EF2F00E91091 /* Info.plist */,
 			);
 			path = ShareExtension;
@@ -514,6 +520,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				93B6D57A2A88402E009CF4AE /* PBXTargetDependency */,
 			);
 			name = ShareExtension;
 			productName = ShareExtension;
@@ -688,7 +695,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9343FBDE2A37EF2F00E91091 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -869,17 +875,14 @@
 			target = 9388FC642A1C427C0083A500 /* SetCap */;
 			targetProxy = 9388FC862A1C427C0083A500 /* PBXContainerItemProxy */;
 		};
+		93B6D57A2A88402E009CF4AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9341658C2A36731B0032F64B /* SetCapUIKit */;
+			targetProxy = 93B6D5792A88402E009CF4AE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9343FBDC2A37EF2F00E91091 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9343FBDD2A37EF2F00E91091 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
 		9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -894,6 +897,7 @@
 		934165822A3673030032F64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -937,6 +941,7 @@
 		934165832A3673030032F64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -1002,6 +1007,7 @@
 		934165A52A36731B0032F64B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1041,6 +1047,7 @@
 		934165A62A36731B0032F64B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1118,12 +1125,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = CapSet;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1144,12 +1152,13 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = X2TBSUCASC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShareExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ShareExtension;
+				INFOPLIST_KEY_CFBundleDisplayName = CapSet;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

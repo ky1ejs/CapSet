@@ -7,28 +7,71 @@
 
 import UIKit
 import Social
+import SwiftUI
+import UniformTypeIdentifiers
+import SetCapUIKit
 
-class ShareViewController: SLComposeServiceViewController {
+@objc(ShareViewController)
+class ShareViewController: UIViewController {
 
-    override func isContentValid() -> Bool {
-        // Do validation of contentText and/or NSExtensionContext attachments here
-        return true
+    override func viewDidLoad() {
+        let container = Container(doneAction: { [weak self] in
+            self?.extensionContext?.completeRequest(returningItems: nil)
+        },
+        subview: CaptionView(loader: ImageLoader(context: extensionContext!)))
+
+        let host = UIHostingController(rootView: container)
+        host.didMove(toParent: self)
+        view.addSubview(host.view)
+        NSLayoutConstraint.activate([
+            host.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            host.view.topAnchor.constraint(equalTo: view.topAnchor),
+            host.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            host.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            ])
+        host.view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
     }
+}
 
-    override func didSelectPost() {
-        // This is called after the user selects Post.
-        // Do the upload of contentText and/or NSExtensionContext attachments.
+struct Container: View {
+    let doneAction: () -> Void
 
-        // Inform the host that we're done, so it un-blocks its UI.
-        // Note: Alternatively you could call super's -didSelectPost,
-        // which will similarly complete the extension context.
-        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
+    let subview: any View
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack(alignment: .center) {
+                Button("Done") {
+                    doneAction()
+                }.padding(8)
+                Spacer()
+            }.padding(.leading, 8).padding(.vertical, 4)
+            AnyView(subview)
+        }
     }
+}
 
-    override func configurationItems() -> [Any]! {
-        // To add configuration options via table cells at the
-        // bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
-        return []
+struct ImageLoader: CaptionViewImageLoader {
+    let context: NSExtensionContext
+
+    func load() async -> Data {
+        // swiftlint:disable force_try
+        if let input = context.inputItems.first as? NSExtensionItem {
+            if let attachment = input.attachments?.first {
+                let result = try! await attachment.loadItem(forTypeIdentifier: UTType.image.identifier)
+                switch result {
+                case let image as UIImage:
+                    return image.jpegData(compressionQuality: 1)!
+                case let data as Data:
+                    return data
+                case let url as URL:
+                    return try! Data(contentsOf: url)
+                default:
+                    fatalError("Unexpected data: \(type(of: result))")
+                }
+            }
+        }
+        fatalError("Could not load data")
+        // swiftlint:enable force_try
     }
-
 }
