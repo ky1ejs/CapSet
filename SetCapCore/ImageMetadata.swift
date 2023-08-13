@@ -67,7 +67,8 @@ private struct ParsedTiffData {
             body = nil
             return
         }
-        body = tiff.get(kCGImagePropertyTIFFModel)
+        let body: String? = tiff.get(kCGImagePropertyTIFFModel)
+        self.body = cameraBodies[body ?? ""] ?? body
     }
 }
 

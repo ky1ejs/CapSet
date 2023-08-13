@@ -43,6 +43,7 @@
 		9388FC8C2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */; };
 		938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC8952A786D1100D5DA6A /* CaptionView.swift */; };
 		93B6D5772A88402E009CF4AE /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
+		93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5802A8964E1009CF4AE /* CameraBodies.swift */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -191,6 +192,7 @@
 		9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
 		938DC8952A786D1100D5DA6A /* CaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
+		93B6D5802A8964E1009CF4AE /* CameraBodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraBodies.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +287,7 @@
 				9341656C2A3673030032F64B /* SetCapCore.h */,
 				9388FC982A1C56700083A500 /* ImageMetadata.swift */,
 				934165AA2A36733B0032F64B /* Caption.swift */,
+				93B6D5802A8964E1009CF4AE /* CameraBodies.swift */,
 				9341656D2A3673030032F64B /* SetCapCore.docc */,
 			);
 			path = SetCapCore;
@@ -751,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */,
 				934165AB2A36733B0032F64B /* Caption.swift in Sources */,
 				934165B02A3673610032F64B /* ImageMetadata.swift in Sources */,
 				9341656E2A3673030032F64B /* SetCapCore.docc in Sources */,
