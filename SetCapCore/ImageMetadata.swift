@@ -29,11 +29,17 @@ private struct ParsedExifData {
 
         fNumber = exif.get(kCGImagePropertyExifFNumber)
 
-        let exposureTime: NSNumber = exif.get(kCGImagePropertyExifExposureTime)
-        shutterSpeed = formatShutterSpeed(exposureTime.doubleValue)
+        if let exposureTime = exif[kCGImagePropertyExifExposureTime] as? NSNumber {
+            shutterSpeed = formatShutterSpeed(exposureTime.doubleValue)
+        } else {
+            shutterSpeed = nil
+        }
 
-        let isoRatings: [NSNumber] = exif.get(kCGImagePropertyExifISOSpeedRatings)
-        iso = isoRatings.first
+        if let isoRatings: [NSNumber] = exif.get(kCGImagePropertyExifISOSpeedRatings) {
+            iso = isoRatings.first
+        } else {
+            iso = nil
+        }
 
         maxAperture = exif.get(kCGImagePropertyExifMaxApertureValue)
         focalLength = exif.get(kCGImagePropertyExifFocalLength)
@@ -72,6 +78,7 @@ public struct ImageMetadata {
     public var maxAperture: NSNumber? { return exifData.maxAperture }
     public var focalLength: NSNumber? { return exifData.focalLength }
     public var focalLength35mmEquivalent: NSNumber? { return exifData.focalLength35mmEquivalent }
+    public var exposureCompensation: NSNumber? { return exifData.focalLength35mmEquivalent }
 
     public var lens: String? { return exifAuxData.lens}
 
@@ -97,10 +104,8 @@ private extension Dictionary where Key == String {
 
 // Helper for casting value in a dictionary
 private extension Dictionary where Key == CFString {
-    func get<T>(_ k: Key) -> T {
-        // swiftlint:disable force_cast
-        return self[k] as! T
-        // swiftlint:enable force_cast
+    func get<T>(_ k: Key) -> T? {
+        return self[k] as? T
     }
 }
 
