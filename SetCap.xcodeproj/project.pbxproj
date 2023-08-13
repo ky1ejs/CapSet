@@ -44,6 +44,8 @@
 		938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC8952A786D1100D5DA6A /* CaptionView.swift */; };
 		93B6D5772A88402E009CF4AE /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
 		93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5802A8964E1009CF4AE /* CameraBodies.swift */; };
+		93B6D5832A89675C009CF4AE /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 93B6D5822A89675C009CF4AE /* Sentry */; };
+		93B6D5852A896760009CF4AE /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 93B6D5842A896760009CF4AE /* SentrySwiftUI */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -235,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B6D5772A88402E009CF4AE /* SetCapUIKit.framework in Frameworks */,
+				93B6D5852A896760009CF4AE /* SentrySwiftUI in Frameworks */,
+				93B6D5832A89675C009CF4AE /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +534,10 @@
 				93B6D57A2A88402E009CF4AE /* PBXTargetDependency */,
 			);
 			name = ShareExtension;
+			packageProductDependencies = (
+				93B6D5822A89675C009CF4AE /* Sentry */,
+				93B6D5842A896760009CF4AE /* SentrySwiftUI */,
+			);
 			productName = ShareExtension;
 			productReference = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -1563,6 +1571,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;
+		};
+		93B6D5822A89675C009CF4AE /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+		93B6D5842A896760009CF4AE /* SentrySwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = SentrySwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
