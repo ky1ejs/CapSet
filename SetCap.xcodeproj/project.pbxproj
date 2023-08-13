@@ -192,6 +192,8 @@
 		9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9388FC982A1C56700083A500 /* ImageMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMetadata.swift; sourceTree = "<group>"; };
 		938DC8952A786D1100D5DA6A /* CaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
+		93B6D57C2A8914A0009CF4AE /* implmenting-the-photo-picker.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "implmenting-the-photo-picker.md"; sourceTree = "<group>"; };
+		93B6D57D2A891A14009CF4AE /* swiftui.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = swiftui.md; sourceTree = "<group>"; };
 		93B6D5802A8964E1009CF4AE /* CameraBodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraBodies.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -334,6 +336,8 @@
 			isa = PBXGroup;
 			children = (
 				9347837C2A80396700D29913 /* fixing-sheet-presentaiton-animation-on-push.md */,
+				93B6D57C2A8914A0009CF4AE /* implmenting-the-photo-picker.md */,
+				93B6D57D2A891A14009CF4AE /* swiftui.md */,
 			);
 			path = journeys;
 			sourceTree = "<group>";
