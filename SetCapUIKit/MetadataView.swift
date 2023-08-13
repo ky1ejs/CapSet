@@ -154,7 +154,7 @@ struct MetadataView_Previews: PreviewProvider {
     static var previews: some View {
         let bundle = Bundle(identifier: "dev.kylejs.SetCapUIKit")!
         let imageData = NSDataAsset(name: "parker", bundle: bundle)!
-        let metadata = ImageMetadata(image: CIImage(data: imageData.data)!)
+        let metadata = ImageMetadata(imageData: imageData.data)
         MetadataView(metadata: metadata)
     }
 }

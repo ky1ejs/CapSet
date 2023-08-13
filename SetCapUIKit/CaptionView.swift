@@ -46,7 +46,7 @@ public struct CaptionView: View {
         }.task {
             let imageData = await loader.load()
             self.image = UIImage(data: imageData)
-            self.metadata = ImageMetadata(image: CIImage(data: imageData)!)
+            self.metadata = ImageMetadata(imageData: imageData)
         }.onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.08) {
                 showBottomSheet = true
