@@ -17,7 +17,7 @@ class PhotoLibraryService: ObservableObject {
     static private let ACCESS_LEVEL = PHAccessLevel.readWrite
 
     @Published var authState: PHAuthorizationStatus = PHPhotoLibrary.authorizationStatus(for: ACCESS_LEVEL)
-    @Published var results = PHFetchResultCollection(fetchResult: .init())
+    @Published var results = PHFetchResultCollection<PHAsset>(fetchResult: .init())
 
     private let imageCachingManager = PHCachingImageManager.default()
 
@@ -92,7 +92,7 @@ class PhotoLibraryService: ObservableObject {
                         return
                     }
                     continuation.resume(returning: image)
-            })
+                })
         }
     }
 

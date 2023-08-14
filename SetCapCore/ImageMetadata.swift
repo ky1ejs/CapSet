@@ -91,7 +91,7 @@ public struct ImageMetadata {
 
     public init(imageData: Data) {
         let props = CGImageSourceCreateWithData(imageData as CFData, nil)!
-        let metadata = CGImageSourceCopyPropertiesAtIndex(props, 0, nil) as? [CFString : Any]
+        let metadata = CGImageSourceCopyPropertiesAtIndex(props, 0, nil) as? [CFString: Any]
         exifData = ParsedExifData(metadata?.get(kCGImagePropertyExifDictionary))
         exifAuxData = ParsedExifAuxData(metadata?.get(kCGImagePropertyExifAuxDictionary))
         tiffData = ParsedTiffData(metadata?.get(kCGImagePropertyTIFFDictionary))

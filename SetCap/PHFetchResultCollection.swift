@@ -7,15 +7,14 @@
 
 import Photos
 
-struct PHFetchResultCollection: RandomAccessCollection, Equatable {
-    typealias Element = PHAsset
+struct PHFetchResultCollection<T>: RandomAccessCollection, Equatable where T: AnyObject {
     typealias Index = Int
 
-    var fetchResult: PHFetchResult<PHAsset>
+    var fetchResult: PHFetchResult<T>
     var endIndex: Int { fetchResult.count }
     var startIndex: Int { 0 }
 
-    subscript(position: Int) -> PHAsset {
+    subscript(position: Int) -> T {
         fetchResult.object(at: fetchResult.count - position - 1)
     }
 }

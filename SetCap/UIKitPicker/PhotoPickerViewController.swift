@@ -9,6 +9,7 @@ import UIKit
 import Combine
 import SwiftUI
 import SetCapUIKit
+import Photos
 
 class PhotoPickerViewController: UICollectionViewController {
     typealias CellRegisration = UICollectionView.CellRegistration<
@@ -18,17 +19,19 @@ class PhotoPickerViewController: UICollectionViewController {
     private let photoService: PhotoLibraryService
     private let layout = UICollectionViewFlowLayout()
     private let itemSize: CGFloat
-    private var collection: PHFetchResultCollection?
+    private var results: PHFetchResultCollection<PHAsset>?
     private var photoSub: AnyCancellable?
     private let cellRegistration: CellRegisration
+    private let collection: PHAssetCollection?
 
-    init(photoService: PhotoLibraryService) {
+    init(photoService: PhotoLibraryService, collection: PHAssetCollection? = nil) {
         self.photoService = photoService
         itemSize = UIScreen.current!.bounds.size.width / 3
         cellRegistration = CellRegisration { cell, _, asset in
             cell.photoService = photoService
             cell.assetId = asset
         }
+        self.collection = collection
         super.init(collectionViewLayout: layout)
         layout.itemSize = CGSize(width: itemSize, height: itemSize)
         layout.minimumLineSpacing = 0
@@ -44,9 +47,15 @@ class PhotoPickerViewController: UICollectionViewController {
     }
 
     override func viewDidLoad() {
-        photoSub = photoService.$results.sink { [weak self] collection in
-            self?.collection = collection
-            self?.collectionView.reloadData()
+        if let collection = collection {
+            let results = PHAsset.fetchAssets(in: collection, options: nil)
+            self.results = PHFetchResultCollection(fetchResult: results)
+            collectionView.reloadData()
+        } else {
+            photoSub = photoService.$results.sink { [weak self] collection in
+                self?.results = collection
+                self?.collectionView.reloadData()
+            }
         }
     }
 
@@ -55,14 +64,14 @@ class PhotoPickerViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collection?.count ?? 0
+        return results?.count ?? 0
     }
 
     override func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath)
     -> UICollectionViewCell {
-        guard let asset = collection?[indexPath.row].localIdentifier else {
+        guard let asset = results?[indexPath.row].localIdentifier else {
             fatalError("no asset for index: \(indexPath)")
 
         }
@@ -75,7 +84,7 @@ class PhotoPickerViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let loader = ImageLoader(assetId: collection![indexPath.row].localIdentifier, photoService: photoService)
+        let loader = ImageLoader(assetId: results![indexPath.row].localIdentifier, photoService: photoService)
         navigationController?.pushViewController(
             UIHostingController(rootView: CaptionView(loader: loader)),
             animated: true
@@ -98,9 +107,10 @@ extension UIWindow {
 struct PhotoPickerViewControllerSwiftUI: UIViewControllerRepresentable {
     typealias UIViewControllerType = PhotoPickerViewController
     @EnvironmentObject private var photoService: PhotoLibraryService
+    let collection: PHAssetCollection?
 
     func makeUIViewController(context: Context) -> PhotoPickerViewController {
-        return PhotoPickerViewController(photoService: photoService)
+        return PhotoPickerViewController(photoService: photoService, collection: collection)
     }
 
     func updateUIViewController(_ uiViewController: PhotoPickerViewController, context: Context) {
@@ -117,16 +127,5 @@ extension UIScreen {
 extension UICollectionReusableView {
     static var identifier: String {
         return "\(self)"
-    }
-}
-
-struct ImageLoader: CaptionViewImageLoader {
-    let assetId: PhotoLibraryService.PHAssetLocalIdentifier
-    let photoService: PhotoLibraryService
-
-    func load() async -> Data {
-        // swiftlint:disable force_try
-        return try! await photoService.fetchImage(byLocalIdentifier: assetId)!
-        // swiftlint:enable force_try
     }
 }

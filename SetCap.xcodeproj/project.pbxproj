@@ -46,6 +46,10 @@
 		93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5802A8964E1009CF4AE /* CameraBodies.swift */; };
 		93B6D5832A89675C009CF4AE /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 93B6D5822A89675C009CF4AE /* Sentry */; };
 		93B6D5852A896760009CF4AE /* SentrySwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 93B6D5842A896760009CF4AE /* SentrySwiftUI */; };
+		93B6D5872A89878A009CF4AE /* AlbumPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5862A89878A009CF4AE /* AlbumPicker.swift */; };
+		93B6D5892A899A45009CF4AE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5882A899A45009CF4AE /* PhotoPicker.swift */; };
+		93B6D58B2A899AB4009CF4AE /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */; };
+		93B6D58D2A89AF7E009CF4AE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -197,6 +201,10 @@
 		93B6D57C2A8914A0009CF4AE /* implmenting-the-photo-picker.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "implmenting-the-photo-picker.md"; sourceTree = "<group>"; };
 		93B6D57D2A891A14009CF4AE /* swiftui.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = swiftui.md; sourceTree = "<group>"; };
 		93B6D5802A8964E1009CF4AE /* CameraBodies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraBodies.swift; sourceTree = "<group>"; };
+		93B6D5862A89878A009CF4AE /* AlbumPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPicker.swift; sourceTree = "<group>"; };
+		93B6D5882A899A45009CF4AE /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
+		93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -393,12 +401,14 @@
 		9388FC672A1C427C0083A500 /* SetCap */ = {
 			isa = PBXGroup;
 			children = (
+				93B6D5862A89878A009CF4AE /* AlbumPicker.swift */,
 				93D768742A749E7600931554 /* App.swift */,
-				42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */,
-				9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */,
-				932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */,
+				93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */,
 				931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */,
-				932AE14B2A75F301004EC0F7 /* PhotoCollectionViewCell.swift */,
+				932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */,
+				42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */,
+				93B6D58E2A89BDD4009CF4AE /* SwiftUIPicker */,
+				93B6D58F2A89BDEA009CF4AE /* UIKitPicker */,
 				9388FC712A1C427C0083A500 /* Assets.xcassets */,
 				9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */,
 				9388FC762A1C427C0083A500 /* Info.plist */,
@@ -421,6 +431,24 @@
 				9388FC8B2A1C427C0083A500 /* SetCapUITestsLaunchTests.swift */,
 			);
 			path = SetCapUITests;
+			sourceTree = "<group>";
+		};
+		93B6D58E2A89BDD4009CF4AE /* SwiftUIPicker */ = {
+			isa = PBXGroup;
+			children = (
+				93B6D5882A899A45009CF4AE /* PhotoPicker.swift */,
+				93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */,
+			);
+			path = SwiftUIPicker;
+			sourceTree = "<group>";
+		};
+		93B6D58F2A89BDEA009CF4AE /* UIKitPicker */ = {
+			isa = PBXGroup;
+			children = (
+				932AE14B2A75F301004EC0F7 /* PhotoCollectionViewCell.swift */,
+				9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */,
+			);
+			path = UIKitPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -814,9 +842,13 @@
 			files = (
 				934783802A87CF9D00D29913 /* PhotoPickerViewController.swift in Sources */,
 				932AE14C2A75F301004EC0F7 /* PhotoCollectionViewCell.swift in Sources */,
+				93B6D58D2A89AF7E009CF4AE /* ImageLoader.swift in Sources */,
 				932AE14A2A759529004EC0F7 /* PhotoLibraryService.swift in Sources */,
+				93B6D58B2A899AB4009CF4AE /* PhotoPickerCell.swift in Sources */,
 				934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */,
+				93B6D5892A899A45009CF4AE /* PhotoPicker.swift in Sources */,
 				93D768752A749E7600931554 /* App.swift in Sources */,
+				93B6D5872A89878A009CF4AE /* AlbumPicker.swift in Sources */,
 				931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

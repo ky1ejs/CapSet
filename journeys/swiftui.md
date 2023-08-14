@@ -2,7 +2,20 @@
 
 _Caveat: I'm  a total n00b to SwiftUI and there are probably many APIs that I don't know how to make use of or know about their existence at all._
 
-### Performance of Photo Picker
+## Performance of Photo Picker
+
+The requirements I have of my Photo Picker collection view are
+1. Load images quickly
+2. Support pinch zooming to view more/less and smaller/larger thumbnails
+
+### Loading Quickly
+To load thumbails in a performant manner you should use `PHImageManager`, calling `requestImage` and passing a size that equals the largest size you'll render the image at. The tricky part is that the max image size for you will depend on the max columns you'll support and the width of a given user's screen.
+
+A crude way to handle this would be to calculate for the biggest size screen you could possible support... but this a) may not be viable (e.g. if you're supporting macOS) and b) is wastefull.
+
+A slightly better way of doing this would be to get the given user's `UIScreen` to look up its size, then run your calculation and pass that size down into SwiftUI.  
+
+_whilst writing this piece I played around a bit more with getting the `GeometryReader` to work and managed it by setting the `aspectRatio`. Without this the `LazyVGrid` was unable to figure out the height of items_ 
 
 Implementing a Photo Picker with `LazyVGrid` led to very slow image loading. Also, every time you popped back to the picker, images would load again.
 
