@@ -112,7 +112,7 @@ struct MetadataView: View {
                 .padding(8)
 
                 HStack {
-                    PillView("\(metadata.focalLength?.stringValue ?? "-")mm")
+                    PillView("\(metadata.focalLength35mmEquivalent?.stringValue ?? "-")mm")
                     Spacer()
                     PillView("ƒ\(metadata.fNumber?.stringValue ?? "-")")
                     Spacer()
@@ -135,7 +135,9 @@ struct MetadataView: View {
                 .foregroundColor(Color.primary)
                 .padding()
 
-            TemplateView("Emoji", createCaption(with: metadata))
+            ForEach(Template.allCases) { template in
+                TemplateView(template.name, CaptionBuilder.build(template, with: metadata))
+            }
 
         }
 

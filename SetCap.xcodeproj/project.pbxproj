@@ -29,7 +29,7 @@
 		9341659E2A36731B0032F64B /* SetCapUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */; };
 		9341659F2A36731B0032F64B /* SetCapUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9341658F2A36731B0032F64B /* SetCapUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		934165A22A36731B0032F64B /* SetCapUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */; };
-		934165AB2A36733B0032F64B /* Caption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934165AA2A36733B0032F64B /* Caption.swift */; };
+		934165AB2A36733B0032F64B /* CaptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934165AA2A36733B0032F64B /* CaptionBuilder.swift */; };
 		934165B02A3673610032F64B /* ImageMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC982A1C56700083A500 /* ImageMetadata.swift */; };
 		9343FBDB2A37EF2F00E91091 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */; };
 		9343FBE22A37EF2F00E91091 /* ShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9343FBD82A37EF2F00E91091 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -50,6 +50,7 @@
 		93B6D5892A899A45009CF4AE /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5882A899A45009CF4AE /* PhotoPicker.swift */; };
 		93B6D58B2A899AB4009CF4AE /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */; };
 		93B6D58D2A89AF7E009CF4AE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */; };
+		93B6D5912A89C185009CF4AE /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5902A89C185009CF4AE /* Templates.swift */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -180,7 +181,7 @@
 		934165902A36731B0032F64B /* SetCapUIKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SetCapUIKit.docc; sourceTree = "<group>"; };
 		934165962A36731B0032F64B /* SetCapUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SetCapUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9341659D2A36731B0032F64B /* SetCapUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCapUIKitTests.swift; sourceTree = "<group>"; };
-		934165AA2A36733B0032F64B /* Caption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caption.swift; sourceTree = "<group>"; };
+		934165AA2A36733B0032F64B /* CaptionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBuilder.swift; sourceTree = "<group>"; };
 		9343FBD82A37EF2F00E91091 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9343FBDA2A37EF2F00E91091 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		9343FBDF2A37EF2F00E91091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		93B6D5882A899A45009CF4AE /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		93B6D5902A89C185009CF4AE /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -300,7 +302,8 @@
 			children = (
 				9341656C2A3673030032F64B /* SetCapCore.h */,
 				9388FC982A1C56700083A500 /* ImageMetadata.swift */,
-				934165AA2A36733B0032F64B /* Caption.swift */,
+				934165AA2A36733B0032F64B /* CaptionBuilder.swift */,
+				93B6D5902A89C185009CF4AE /* Templates.swift */,
 				93B6D5802A8964E1009CF4AE /* CameraBodies.swift */,
 				9341656D2A3673030032F64B /* SetCapCore.docc */,
 			);
@@ -795,8 +798,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */,
-				934165AB2A36733B0032F64B /* Caption.swift in Sources */,
+				934165AB2A36733B0032F64B /* CaptionBuilder.swift in Sources */,
 				934165B02A3673610032F64B /* ImageMetadata.swift in Sources */,
+				93B6D5912A89C185009CF4AE /* Templates.swift in Sources */,
 				9341656E2A3673030032F64B /* SetCapCore.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
