@@ -23,7 +23,7 @@ public enum Template: String, CaseIterable, Identifiable {
     case emoji = """
         📷 %{body}
         🔭 %{lens}
-        ⚙️ ƒ%{fNumber} | %{shutter_speed} | ISO %{iso}
+        ⚙️ ƒ%{fNumber} | %{focal_length} | %{shutter_speed} | ISO %{iso}
     """
     case minimal = """
         ƒ%{fNumber} | %{shutter_speed} | ISO %{iso}
