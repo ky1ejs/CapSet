@@ -9,13 +9,23 @@ import SwiftUI
 import Photos
 
 struct AlbumPicker: View {
-    @State private var collections: [PHAssetCollection] = []
+    @State private var mainCollections: [PHAssetCollection] = []
+    @State private var albums: PHFetchResultCollection<PHAssetCollection> = .init(fetchResult: .init())
 
     var body: some View {
         List {
-            ForEach(collections, id: \.localIdentifier) { collection in
-                NavigationLink(collection.localizedTitle ?? "Album") {
-                    PhotoPicker(collection: collection)
+            Section {
+                ForEach(mainCollections, id: \.localIdentifier) { collection in
+                    NavigationLink(collection.localizedTitle ?? "Album") {
+                        PhotoPicker(collection: collection)
+                    }
+                }
+            }
+            Section("Albums") {
+                ForEach(albums, id: \.localIdentifier) { collection in
+                    NavigationLink(collection.localizedTitle ?? "Album") {
+                        PhotoPicker(collection: collection)
+                    }
                 }
             }
         }
@@ -31,7 +41,14 @@ struct AlbumPicker: View {
             var results: [PHAssetCollection] = []
             results += user.objects(at: IndexSet(0..<user.count))
             results += favorites.objects(at: IndexSet(0..<favorites.count))
-            collections = results
+            mainCollections = results
+
+            let albums = PHAssetCollection.fetchAssetCollections(
+                with: .album,
+                subtype: .smartAlbumUserLibrary,
+                options: nil
+            )
+            self.albums = PHFetchResultCollection(fetchResult: albums)
         }
     }
 }
