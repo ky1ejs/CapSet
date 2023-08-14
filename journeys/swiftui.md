@@ -15,7 +15,7 @@ A crude way to handle this would be to calculate for the biggest size screen you
 
 A slightly better way of doing this would be to get the given user's `UIScreen` to look up its size, then run your calculation and pass that size down into SwiftUI.  
 
-_whilst writing this piece I played around a bit more with getting the `GeometryReader` to work and managed it by setting the `aspectRatio`. Without this the `LazyVGrid` was unable to figure out the height of items_ 
+_whilst writing this piece I played around a bit more with getting the `GeometryReader` to work and managed it by setting the `aspectRatio`. Without this the `LazyVGrid` was unable to figure out the height of items. Realized via [this SO answer](https://stackoverflow.com/questions/64420313/how-to-make-a-lazyvgrid-of-square-images)._ 
 
 Implementing a Photo Picker with `LazyVGrid` led to very slow image loading. Also, every time you popped back to the picker, images would load again.
 

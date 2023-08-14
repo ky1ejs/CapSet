@@ -45,7 +45,7 @@ class ShareViewController: UIViewController {
             host.view.topAnchor.constraint(equalTo: view.topAnchor),
             host.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             host.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
+        ])
         host.view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
     }
