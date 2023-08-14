@@ -28,7 +28,11 @@ struct PhotoPickerCell: View {
                     } label: {
                         Image(uiImage: image)
                             .resizable()
-                            .aspectRatio(1, contentMode: .fill)
+                            .aspectRatio(contentMode: .fill)
+                            .frame(
+                                width: proxy.size.width,
+                                height: proxy.size.width
+                            )
                             .clipped()
                             .onDisappear {
                                 self.image = nil
