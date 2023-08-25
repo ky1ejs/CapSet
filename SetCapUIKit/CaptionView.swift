@@ -12,7 +12,6 @@ public struct CaptionView: View {
     @State private var metadata: ImageMetadata?
     @State private var image: UIImage?
     @State private var showBottomSheet = false
-    @Environment(\.dismiss) private var dismiss
     private let loader: CaptionViewImageLoader
 
     public init(loader: CaptionViewImageLoader) {
