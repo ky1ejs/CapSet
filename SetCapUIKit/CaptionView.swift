@@ -22,22 +22,20 @@ public struct CaptionView: View {
     public var body: some View {
         ZStack {
             if let image = image, let metadata = metadata {
-                VStack(alignment: .leading, spacing: 0) {
-                    Image(uiImage: image)
-                        .resizable()
-                        .scaledToFit()
-                    Spacer()
-                }
-                .sheet(isPresented: $showBottomSheet) {
-                    VStack(alignment: .leading, spacing: 0) {
-                        ScrollView {
-                            MetadataView(metadata: metadata)
+                ScrollView {
+                    VStack(spacing: 0) {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                            .padding(.bottom, 18)
+                        MetadataView(metadata: metadata)
+                        HStack {
+                            NavigationLink(
+                                "view all metadata",
+                                destination: AllMetadataView(metadata: metadata)
+                            ).padding(.vertical, 12)
                         }
-                        Spacer()
-                    }.padding(.top, 24)
-                    .presentationDetents([.height(160), .fraction(0.8)])
-                    .interactiveDismissDisabled()
-                    .presentationBackgroundInteraction(.enabled)
+                    }
                 }
             } else {
                 ProgressView()
@@ -53,18 +51,7 @@ public struct CaptionView: View {
             }
         }.onDisappear {
             showBottomSheet = false
-        }.toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    showBottomSheet = false
-                    dismiss()
-                } label: {
-                    Image(systemName: "chevron.left").font(Font.body.weight(.bold))
-                    Text("Back")
-                }
-
-            }
-        }.navigationBarBackButtonHidden()
+        }
     }
 }
 
@@ -82,8 +69,7 @@ struct CaptionPickerView_Previews: PreviewProvider {
     }
 
     static var previews: some View {
-        let bundle = Bundle(identifier: "dev.kylejs.SetCapUIKit")!
-        let imageData = NSDataAsset(name: "parker", bundle: bundle)!
-        CaptionView(loader: PassedImageLoader(imageData: imageData.data))
+        let data = SwiftUIDevResources.loadExampleImageData()
+        CaptionView(loader: PassedImageLoader(imageData: data))
     }
 }

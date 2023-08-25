@@ -52,7 +52,6 @@ class PhotoLibraryService: ObservableObject {
         options.isNetworkAccessAllowed = true
         options.isSynchronous = true
         return try await withCheckedThrowingContinuation { [weak self] continuation in
-            /// Use the imageCachingManager to fetch the image
             self?.imageCachingManager.requestImageDataAndOrientation(
                 for: asset,
                 options: options,

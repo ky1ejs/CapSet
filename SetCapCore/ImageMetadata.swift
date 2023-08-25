@@ -8,15 +8,20 @@
 import CoreImage
 import ImageIO
 
-private struct ParsedExifData {
-    let fNumber: NSNumber?
-    let shutterSpeed: String?
-    let iso: NSNumber?
-    let maxAperture: NSNumber?
-    let focalLength: NSNumber?
-    let focalLength35mmEquivalent: NSNumber?
+public typealias MetadataDict = [String: Any]
+
+public struct ParsedExifData {
+    public let exifData: MetadataDict?
+    public let fNumber: NSNumber?
+    public let shutterSpeed: String?
+    public let iso: NSNumber?
+    public let maxAperture: NSNumber?
+    public let focalLength: NSNumber?
+    public let focalLength35mmEquivalent: NSNumber?
 
     init(_ exif: [CFString: Any]?) {
+        exifData = exif as MetadataDict?
+
         guard let exif = exif else {
             fNumber = nil
             shutterSpeed = nil
@@ -47,10 +52,13 @@ private struct ParsedExifData {
     }
 }
 
-private struct ParsedExifAuxData {
-    let lens: String?
+public struct ParsedExifAuxData {
+    public let exifData: MetadataDict?
+    public let lens: String?
 
     init(_ exifAux: [CFString: Any]?) {
+        exifData = exifAux as MetadataDict?
+
         guard let exifAux = exifAux else {
             lens = nil
             return
@@ -59,10 +67,13 @@ private struct ParsedExifAuxData {
     }
 }
 
-private struct ParsedTiffData {
-    let body: String?
+public struct ParsedTiffData {
+    public let exifData: MetadataDict?
+    public let body: String?
 
     init(_ tiff: [CFString: Any]?) {
+        exifData = tiff as MetadataDict?
+
         guard let tiff = tiff else {
             body = nil
             return
@@ -85,9 +96,9 @@ public struct ImageMetadata {
 
     public var body: String? { return tiffData.body }
 
-    fileprivate let exifData: ParsedExifData
-    fileprivate let exifAuxData: ParsedExifAuxData
-    fileprivate let tiffData: ParsedTiffData
+    public let exifData: ParsedExifData
+    public let exifAuxData: ParsedExifAuxData
+    public let tiffData: ParsedTiffData
 
     public init(imageData: Data) {
         let props = CGImageSourceCreateWithData(imageData as CFData, nil)!

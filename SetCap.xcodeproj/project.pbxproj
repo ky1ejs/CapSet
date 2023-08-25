@@ -51,6 +51,8 @@
 		93B6D58B2A899AB4009CF4AE /* PhotoPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */; };
 		93B6D58D2A89AF7E009CF4AE /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */; };
 		93B6D5912A89C185009CF4AE /* Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5902A89C185009CF4AE /* Templates.swift */; };
+		93B6D5942A8AE131009CF4AE /* AllMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */; };
+		93B6D5962A8AE153009CF4AE /* SwiftUIDevResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */; };
 		93D768752A749E7600931554 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D768742A749E7600931554 /* App.swift */; };
 /* End PBXBuildFile section */
 
@@ -207,6 +209,8 @@
 		93B6D58A2A899AB4009CF4AE /* PhotoPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerCell.swift; sourceTree = "<group>"; };
 		93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		93B6D5902A89C185009CF4AE /* Templates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Templates.swift; sourceTree = "<group>"; };
+		93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMetadataView.swift; sourceTree = "<group>"; };
+		93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDevResources.swift; sourceTree = "<group>"; };
 		93D768742A749E7600931554 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,6 +328,8 @@
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
 				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
 				423D10EE2A7BBB75000165C4 /* IconView.swift */,
+				93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */,
+				93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
 			);
@@ -817,8 +823,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B6D5942A8AE131009CF4AE /* AllMetadataView.swift in Sources */,
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
 				423D10EF2A7BBB75000165C4 /* IconView.swift in Sources */,
+				93B6D5962A8AE153009CF4AE /* SwiftUIDevResources.swift in Sources */,
 				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
 				938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */,
 			);
