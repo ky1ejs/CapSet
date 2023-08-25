@@ -24,13 +24,13 @@ public enum Template: String, CaseIterable, Identifiable {
         📷 %{body}
         🔭 %{lens}
         ⚙️ ƒ%{fNumber} | %{focal_length} | %{shutter_speed} | ISO %{iso}
-    """
+        """
     case minimal = """
         ƒ%{fNumber} | %{shutter_speed} | ISO %{iso}
         %{focal_length}
-    """
+        """
     case clean = """
         %{body}
         %{focal_length} | ƒ%{fNumber} | %{shutter_speed} | ISO %{iso}
-    """
+        """
 }
