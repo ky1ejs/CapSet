@@ -18,6 +18,7 @@ public struct ParsedExifData {
     public let maxAperture: NSNumber?
     public let focalLength: NSNumber?
     public let focalLength35mmEquivalent: NSNumber?
+    public let lensModel: String?
 
     init(_ exif: [CFString: Any]?) {
         exifData = exif as MetadataDict?
@@ -29,6 +30,7 @@ public struct ParsedExifData {
             maxAperture = nil
             focalLength = nil
             focalLength35mmEquivalent = nil
+            lensModel = nil
             return
         }
 
@@ -49,6 +51,7 @@ public struct ParsedExifData {
         maxAperture = exif.get(kCGImagePropertyExifMaxApertureValue)
         focalLength = exif.get(kCGImagePropertyExifFocalLength)
         focalLength35mmEquivalent = exif.get(kCGImagePropertyExifFocalLenIn35mmFilm)
+        lensModel = exif.get(kCGImagePropertyExifLensModel)
     }
 }
 
@@ -92,7 +95,7 @@ public struct ImageMetadata {
     public var focalLength35mmEquivalent: NSNumber? { return exifData.focalLength35mmEquivalent }
     public var exposureCompensation: NSNumber? { return exifData.focalLength35mmEquivalent }
 
-    public var lens: String? { return exifAuxData.lens}
+    public var lens: String? { return exifAuxData.lens ?? exifData.lensModel }
 
     public var body: String? { return tiffData.body }
 
