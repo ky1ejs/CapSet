@@ -1,2 +1,9 @@
 disabled_rules:
   - identifier_name
+
+opt_in_rules:
+  - unused_capture_list
+
+analyzer_rules:
+  - unused_declaration
+  - unused_import
