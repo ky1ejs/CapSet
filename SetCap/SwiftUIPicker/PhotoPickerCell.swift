@@ -34,17 +34,18 @@ struct PhotoPickerCell: View {
                                 height: proxy.size.width
                             )
                             .clipped()
-                            .onDisappear {
-                                self.image = nil
-                            }
                     }
                 } else {
                     Rectangle()
                         .foregroundColor(.gray)
                     ProgressView()
                 }
-            }.task {
-                await loadImageAsset(targetSize: proxy.size)
+            }.onDisappear {
+                self.image = nil
+            }.onAppear {
+                Task {
+                    await loadImageAsset(targetSize: proxy.size)
+                }
             }
         }.aspectRatio(1, contentMode: .fill)
     }
