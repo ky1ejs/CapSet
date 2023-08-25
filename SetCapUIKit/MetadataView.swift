@@ -116,7 +116,7 @@ struct MetadataView: View {
                     Spacer()
                     PillView("ƒ\(metadata.fNumber?.stringValue ?? "-")")
                     Spacer()
-                    PillView("EV \(metadata.exifData.exposureCompensation ?? "-")")
+                    PillView("EV \(metadata.exposureCompensation ?? 0)")
                     Spacer()
                     PillView("ISO \(metadata.iso?.stringValue ?? "-")")
                     Spacer()
