@@ -97,14 +97,39 @@ public struct ImageMetadata {
     public var focalLength: NSNumber? { return exifData.focalLength }
     public var focalLength35mmEquivalent: NSNumber? { return exifData.focalLength35mmEquivalent }
     public var exposureCompensation: NSNumber? { return exifData.exposureCompensation }
-
     public var lens: String? { return exifAuxData.lens ?? exifData.lensModel }
-
     public var body: String? { return tiffData.body }
 
     public let exifData: ParsedExifData
     public let exifAuxData: ParsedExifAuxData
     public let tiffData: ParsedTiffData
+
+    public var formattedFocalLength: String? {
+        guard let fl = focalLength35mmEquivalent else {
+            return nil
+        }
+        return fl.stringValue + "mm"
+    }
+
+    public var formattedAperture: String? {
+        guard let aperture = fNumber else {
+            return nil
+        }
+        return "ƒ" + aperture.stringValue
+    }
+
+    public var formattedIso: String? {
+        guard let iso = iso else {
+            return nil
+        }
+        return "ISO " + iso.stringValue
+    }
+    public var formattedExposureCompensation: String? {
+        guard let ev = exposureCompensation else {
+            return nil
+        }
+        return "EV " + ev.stringValue
+    }
 
     public init(imageData: Data) {
         let props = CGImageSourceCreateWithData(imageData as CFData, nil)!

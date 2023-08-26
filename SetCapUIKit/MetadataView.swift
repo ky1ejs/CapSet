@@ -17,7 +17,7 @@ struct PillView: View {
 
     var body: some View {
         Text(text)
-            .font(.custom("SF Compact", size: 16 ))
+            .font(.custom("SF Compact", size: 12 ))
             .padding(.horizontal, 6)
             .padding(.vertical, 4)
             .background(.ultraThinMaterial)
@@ -129,16 +129,6 @@ struct MetadataView: View {
             .background(.ultraThinMaterial)
             .cornerRadius(6)
             .padding(.horizontal, 16)
-
-            Text("Choose a template")
-                .fontWeight(.medium)
-                .foregroundColor(Color.primary)
-                .padding()
-
-            ForEach(Template.allCases) { template in
-                TemplateView(template.name, CaptionBuilder.build(template, with: metadata))
-            }
-
         }
 
     }
