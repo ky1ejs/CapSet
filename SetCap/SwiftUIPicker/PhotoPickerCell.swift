@@ -23,8 +23,8 @@ struct PhotoPickerCell: View {
         GeometryReader { proxy in
             ZStack {
                 if let image = image {
+                    let loader = ImageLoader(assetId: assetLocalId, photoService: photoLibraryService)
                     NavigationLink {
-                        let loader = ImageLoader(assetId: assetLocalId, photoService: photoLibraryService)
                         CaptionView(loader: loader)
                             .environment(\.templateActions, shareActions(assetId: assetLocalId))
                     } label: {
@@ -36,6 +36,26 @@ struct PhotoPickerCell: View {
                                 height: proxy.size.width
                             )
                             .clipped()
+                    }.contextMenu(menuItems: {
+                        NavigationLink {
+                            CaptionView(loader: loader)
+                                .environment(\.templateActions, shareActions(assetId: assetLocalId))
+                        } label: {
+                            Text("open")
+                        }
+                        Button("Copy last used caption (\"emoji\")") {
+
+                        }
+                        Button("Post to instagram with last used emoji") {
+
+                        }
+                        Button("Share") {
+
+                        }
+                    }) {
+
+                            CaptionPreview(assetId: assetLocalId)
+                                .environmentObject(photoLibraryService)
                     }
                 } else {
                     Rectangle()
@@ -83,6 +103,39 @@ struct PhotoPickerCell: View {
 
         return actions
     }
+}
+
+struct CaptionPreview: View {
+    @State private var imageMetadata: ImageMetadata?
+    @State private var image: UIImage?
+    @EnvironmentObject var photoLibraryService: PhotoLibraryService
+
+    let assetId: String
+
+    var body: some View {
+        VStack {
+            if let imageMetadata = imageMetadata, let image = image {
+                let name = Template.emoji.name
+                let caption = CaptionBuilder.build(.emoji, with: imageMetadata)
+
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .fixedSize(horizontal: false, vertical: true)
+                TemplateView(templateTitle: name, caption: caption)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .padding(.bottom, 140)
+            } else {
+                CapSetLoadingIndicator()
+            }
+        }.task {
+            if let data = try? await photoLibraryService.fetchImage(byLocalIdentifier: assetId) {
+                imageMetadata = ImageMetadata(imageData: data)
+                image = UIImage(data: data)
+            }
+        }
+    }
+
 }
 
 extension PhotoPickerCell {

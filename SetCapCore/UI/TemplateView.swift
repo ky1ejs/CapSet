@@ -27,6 +27,11 @@ public struct TemplateView: View {
     public typealias Actions = OrderedSet<Action>
     public typealias ShareHandler = ((_ caption: String) -> Void)
 
+    public init(templateTitle: String, caption: String) {
+        self.templateTitle = templateTitle
+        self.caption = caption
+    }
+
     public enum Action: Hashable, Identifiable {
 
         public static func == (lhs: TemplateView.Action, rhs: TemplateView.Action) -> Bool {
