@@ -36,7 +36,7 @@ struct PhotoPickerCell: View {
                                 height: proxy.size.width
                             )
                             .clipped()
-                    }.contextMenu(menuItems: {
+                    }.contextMenu {
                         NavigationLink {
                             CaptionView(loader: loader)
                                 .environment(\.templateActions, shareActions(assetId: assetLocalId))
@@ -52,10 +52,11 @@ struct PhotoPickerCell: View {
                         Button("Share") {
 
                         }
-                    }) {
+                    } preview: {
 
                             CaptionPreview(assetId: assetLocalId)
                                 .environmentObject(photoLibraryService)
+                                .padding(0)
                     }
                 } else {
                     Rectangle()
@@ -107,33 +108,26 @@ struct PhotoPickerCell: View {
 
 struct CaptionPreview: View {
     @State private var imageMetadata: ImageMetadata?
-    @State private var image: UIImage?
     @EnvironmentObject var photoLibraryService: PhotoLibraryService
 
     let assetId: String
 
     var body: some View {
-        VStack {
-            if let imageMetadata = imageMetadata, let image = image {
+
+            if let imageMetadata = imageMetadata {
                 let name = Template.emoji.name
                 let caption = CaptionBuilder.build(.emoji, with: imageMetadata)
-
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .fixedSize(horizontal: false, vertical: true)
-                TemplateView(templateTitle: name, caption: caption)
-                    .fixedSize(horizontal: false, vertical: true)
-                    .padding(.bottom, 140)
+                TemplateView(templateTitle: name, caption: caption, addCopyAction: false)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 6)
             } else {
                 CapSetLoadingIndicator()
+                    .task {
+                        if let data = try? await photoLibraryService.fetchImage(byLocalIdentifier: assetId) {
+                            imageMetadata = ImageMetadata(imageData: data)
+                        }
+                    }
             }
-        }.task {
-            if let data = try? await photoLibraryService.fetchImage(byLocalIdentifier: assetId) {
-                imageMetadata = ImageMetadata(imageData: data)
-                image = UIImage(data: data)
-            }
-        }
     }
 
 }
