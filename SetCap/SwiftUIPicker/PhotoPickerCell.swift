@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import SetCapUIKit
+import SetCapCore
+import Photos
 
 struct PhotoPickerCell: View {
     private var assetLocalId: String
@@ -52,13 +53,35 @@ struct PhotoPickerCell: View {
     }
 
     func shareActions(assetId: String) -> TemplateView.Actions {
-        if Instagram.canPost() {
-            return [.shareToInstagram(handler: { caption in
+        var actions = TemplateView.Actions()
+
+        let insta = InstagramSharing(application: UIApplication.shared)
+        if insta.canPost() {
+            actions.append(.shareToInstagram(handler: { caption in
                 UIPasteboard.general.string = caption
-                Instagram.postToFeed(imageId: assetId)
-            })]
+                insta.postImageFromLibrary(assetId: assetId)
+            }))
         }
-        return nil
+
+        if let vc = UIWindow.current?.rootViewController {
+            actions.append(.shareViaIos(handler: { caption in
+                UIPasteboard.general.string = caption
+
+                Task {
+                    guard let image = try? await photoLibraryService.fetchImage(
+                        byLocalIdentifier: assetId,
+                        forSize: PHImageManagerMaximumSize
+                    ) else { return }
+
+                    DispatchQueue.main.async {
+                        let activityVC = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+                        vc.present(activityVC, animated: true)
+                    }
+                }
+            }))
+        }
+
+        return actions
     }
 }
 

@@ -1,20 +1,19 @@
 //
 //  TemplateView.swift
-//  SetCapUIKit
+//  SetCapCore
 //
 //  Created by Kyle Satti on 8/26/23.
 //
 
 import SwiftUI
-import SetCapCore
 import OrderedCollections
 
 public struct TemplateActionsKey: EnvironmentKey {
-    public static let defaultValue: TemplateView.Actions = nil
+    public static let defaultValue: TemplateView.Actions? = nil
 }
 
 public extension EnvironmentValues {
-    var templateActions: TemplateView.Actions {
+    var templateActions: TemplateView.Actions? {
         get { self[TemplateActionsKey.self] }
         set { self[TemplateActionsKey.self] = newValue }
     }
@@ -23,9 +22,9 @@ public extension EnvironmentValues {
 public struct TemplateView: View {
     let templateTitle: String
     let caption: String
-    @Environment(\.templateActions) var actions: Actions
+    @Environment(\.templateActions) var actions: Actions?
 
-    public typealias Actions = OrderedSet<Action>?
+    public typealias Actions = OrderedSet<Action>
     public typealias ShareHandler = ((_ caption: String) -> Void)
 
     public enum Action: Hashable, Identifiable {
@@ -38,23 +37,53 @@ public struct TemplateView: View {
             hasher.combine(id)
         }
 
-        public var id: String {iconName}
+        public var id: String {
+            switch self {
+            case .shareToInstagram: return "instagram"
+            case .shareViaIos: return "ios"
+            case .copy: return "copy"
+            }
+        }
 
         var handler: ShareHandler {
             switch self {
             case let .shareToInstagram(handler):
                 return handler
+            case let .shareViaIos(handler):
+                return handler
+            case let .copy(handler):
+                return handler
             }
         }
 
-        var iconName: String {
+        var label: some View {
             switch self {
             case .shareToInstagram:
-                return "instagram"
+                let bundle = Bundle(identifier: "dev.kylejs.SetCapCore")!
+                return AnyView(Image("instagram", bundle: bundle)
+                                .foregroundColor(.purple)
+                                .fontWeight(.bold)
+                                .font(.system(size: 20)))
+            case .shareViaIos:
+                return AnyView(Image(systemName: "square.and.arrow.up")
+                                .foregroundColor(.blue))
+            case .copy:
+                return AnyView(Image(systemName: "doc.on.doc.fill")
+                                .foregroundColor(.gray))
             }
         }
 
         case shareToInstagram(handler: ShareHandler)
+        case shareViaIos(handler: ShareHandler)
+        case copy(handler: ShareHandler)
+    }
+
+    private func buildActions() -> OrderedSet<Action> {
+        var actions: OrderedSet<Action> = [.copy(handler: { caption in
+            UIPasteboard.general.string = caption
+        })]
+        actions.append(contentsOf: self.actions ?? [])
+        return actions
     }
 
     public var body: some View {
@@ -66,34 +95,19 @@ public struct TemplateView: View {
                     .foregroundColor(.primary)
                     .padding(.bottom, 8)
                 Spacer()
-                Button {
-                    copyToPasteboard()
-                } label: {
-                    Label("Copy", systemImage: "doc.on.doc.fill")
-                        .fontWeight(.medium)
-                        .foregroundColor(.blue)
+                ForEach(buildActions()) { action in
+                    Button {
+                        action.handler(caption)
+                    } label: {
+                        Label(title: {
+                            Text("unused")
+                        }, icon: {
+                            action.label
+                        })
                         .labelStyle(.iconOnly)
-                }
-                .buttonStyle(.bordered)
-                .controlSize(.small)
-                if let actions = actions {
-                    ForEach(actions) { a in
-                        Button {
-                            a.handler(caption)
-                        } label: {
-                            let bundle = Bundle(identifier: "dev.kylejs.SetCapUIKit")!
-                            Label(title: { Text("")}, icon: {
-                                Image(a.iconName, bundle: bundle)
-                                    .fontWeight(.bold).font(.system(size: 20))
-
-                            })
-                            .fontWeight(.medium)
-                            .foregroundColor(.purple)
-                            .labelStyle(.iconOnly)
-                        }
-                        .buttonStyle(.bordered)
-                        .controlSize(.small)
                     }
+                    .buttonStyle(.bordered)
+                    .controlSize(.small)
                 }
             }
             .padding([.top, .leading, .trailing])
@@ -107,10 +121,6 @@ public struct TemplateView: View {
                 .stroke(.secondary, lineWidth: 0.5)
         )
         .padding(.horizontal, 16)
-    }
-
-    func copyToPasteboard() {
-        UIPasteboard.general.string = caption
     }
 }
 

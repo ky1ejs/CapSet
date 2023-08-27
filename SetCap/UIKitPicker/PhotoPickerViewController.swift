@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 import SwiftUI
-import SetCapUIKit
+import SetCapCore
 import Photos
 
 class PhotoPickerViewController: UICollectionViewController {

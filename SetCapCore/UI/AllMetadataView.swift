@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SetCapCore
 
 enum States: String, Identifiable, CaseIterable {
     public var id: Self { self }

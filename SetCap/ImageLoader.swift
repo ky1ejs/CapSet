@@ -5,7 +5,7 @@
 //  Created by Kyle Satti on 8/13/23.
 //
 
-import SetCapUIKit
+import SetCapCore
 
 struct ImageLoader: CaptionViewImageLoader {
     let assetId: PhotoLibraryService.PHAssetLocalIdentifier

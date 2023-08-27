@@ -1,6 +1,6 @@
 //
 //  IconView.swift
-//  SetCapUIKit
+//  SetCapCore
 //
 //  Created by Olly Boon on 03/08/2023.
 //

@@ -1,12 +1,11 @@
 //
 //  MetadataView.swift
-//  SetCapUIKit
+//  SetCapCore
 //
 //  Created by Olly Boon on 30/07/2023.
 //
 
 import SwiftUI
-import SetCapCore
 
 struct PillView: View {
     let text: String
@@ -98,9 +97,8 @@ var linearGradient: LinearGradient {
 struct MetadataView_Previews: PreviewProvider {
 
     static var previews: some View {
-        let bundle = Bundle(identifier: "dev.kylejs.SetCapUIKit")!
-        let imageData = NSDataAsset(name: "parker", bundle: bundle)!
-        let metadata = ImageMetadata(imageData: imageData.data)
+        let imageData = SwiftUIDevResources.loadExampleImageData()
+        let metadata = ImageMetadata(imageData: imageData)
         MetadataView(metadata: metadata)
     }
 }

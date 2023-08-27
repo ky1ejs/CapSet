@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SetCapCore
 
 public struct CaptionView: View {
     @State private var metadata: ImageMetadata?
