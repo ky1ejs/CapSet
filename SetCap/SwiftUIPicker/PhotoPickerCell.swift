@@ -25,6 +25,7 @@ struct PhotoPickerCell: View {
                     NavigationLink {
                         let loader = ImageLoader(assetId: assetLocalId, photoService: photoLibraryService)
                         CaptionView(loader: loader)
+                            .environment(\.templateActions, shareActions(assetId: assetLocalId))
                     } label: {
                         Image(uiImage: image)
                             .resizable()
@@ -48,6 +49,16 @@ struct PhotoPickerCell: View {
                 }
             }
         }.aspectRatio(1, contentMode: .fill)
+    }
+
+    func shareActions(assetId: String) -> TemplateView.Actions {
+        if Instagram.canPost() {
+            return [.shareToInstagram(handler: { caption in
+                UIPasteboard.general.string = caption
+                Instagram.postToFeed(imageId: assetId)
+            })]
+        }
+        return nil
     }
 }
 

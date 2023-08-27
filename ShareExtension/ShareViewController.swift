@@ -32,10 +32,12 @@ class ShareViewController: UIViewController {
     }
 
     override func viewDidLoad() {
-        let container = Container(doneAction: { [weak self] in
-            self?.extensionContext?.completeRequest(returningItems: nil)
-        },
-        subview: CaptionView(loader: ImageLoader(context: extensionContext!)))
+        let container = Container(
+            doneAction: { [weak self] in
+                self?.extensionContext?.completeRequest(returningItems: nil)
+            },
+            subview: CaptionView(loader: ImageLoader(context: extensionContext!))
+        )
 
         let host = UIHostingController(rootView: container)
         host.didMove(toParent: self)

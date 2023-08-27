@@ -25,52 +25,6 @@ struct PillView: View {
     }
 }
 
-struct TemplateView: View {
-    let templateTitle: String
-    let caption: String
-
-    init(_ template: String, _ metadata: String) {
-        self.templateTitle = template
-        self.caption = metadata
-    }
-
-    var body: some View {
-
-        VStack(alignment: .leading) {
-            HStack(alignment: .bottom) {
-                Text(templateTitle)
-                    .fontWeight(.medium)
-                    .foregroundColor(.primary)
-                    .padding(.bottom, 8)
-                Spacer()
-                Button {
-                    copyToPasteboard()
-                } label: {
-                    Label("Copy", systemImage: "doc.on.doc.fill")
-                        .fontWeight(.medium)
-                        .foregroundColor(.blue)
-                }
-                .buttonStyle(.bordered)
-                .controlSize(.small)
-            }
-            .padding([.top, .leading, .trailing])
-
-            Text(caption)
-                .padding([.leading, .bottom])
-
-        }
-        .overlay(
-            RoundedRectangle(cornerRadius: 16)
-                .stroke(.secondary, lineWidth: 0.5)
-        )
-        .padding(.horizontal, 16)
-    }
-
-    func copyToPasteboard() {
-        UIPasteboard.general.string = caption
-    }
-}
-
 struct MetadataView: View {
     let metadata: ImageMetadata
 

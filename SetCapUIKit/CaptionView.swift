@@ -57,12 +57,14 @@ public struct CaptionView: View {
 
                         VStack(spacing: 16) {
                             ForEach(Template.allCases) { template in
-                                TemplateView(template.name, CaptionBuilder.build(template, with: metadata))
+                                TemplateView(
+                                    templateTitle: template.name,
+                                    caption: CaptionBuilder.build(template, with: metadata))
                             }
                         }
                         Color(.clear).frame(height: 100)
                     }
-                    }
+                }
             } else {
                 ProgressView()
             }

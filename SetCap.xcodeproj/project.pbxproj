@@ -36,6 +36,10 @@
 		934783802A87CF9D00D29913 /* PhotoPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */; };
 		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
 		935612162A87FEDD009F35C4 /* Development.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93075EA02A79B6A100F5F0A3 /* Development.xcassets */; };
+		93716E9E2A9AA1CC007ACF2E /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93716E9D2A9AA1CC007ACF2E /* TemplateView.swift */; };
+		93716EA12A9AB9D9007ACF2E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93716EA02A9AB9D9007ACF2E /* Media.xcassets */; };
+		93716EA32A9ABF0C007ACF2E /* Instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93716E9B2A9A9DAC007ACF2E /* Instagram.swift */; };
+		93716EA62A9AC0C4007ACF2E /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 93716EA52A9AC0C4007ACF2E /* OrderedCollections */; };
 		9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC712A1C427C0083A500 /* Assets.xcassets */; };
 		9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */; };
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
@@ -190,6 +194,10 @@
 		9347837C2A80396700D29913 /* fixing-sheet-presentaiton-animation-on-push.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "fixing-sheet-presentaiton-animation-on-push.md"; sourceTree = "<group>"; };
 		9347837E2A803FDE00D29913 /* .swiftlint.yml */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; tabWidth = 2; };
 		9347837F2A87CF9D00D29913 /* PhotoPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerViewController.swift; sourceTree = "<group>"; };
+		93716E9B2A9A9DAC007ACF2E /* Instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram.swift; sourceTree = "<group>"; };
+		93716E9D2A9AA1CC007ACF2E /* TemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		93716E9F2A9AA568007ACF2E /* post-to-insta-deeplink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "post-to-insta-deeplink.md"; sourceTree = "<group>"; };
+		93716EA02A9AB9D9007ACF2E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		9388FC652A1C427C0083A500 /* SetCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388FC712A1C427C0083A500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9388FC742A1C427C0083A500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -234,6 +242,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93716EA62A9AC0C4007ACF2E /* OrderedCollections in Frameworks */,
 				932AE1422A758BC4004EC0F7 /* SetCapCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,12 +335,14 @@
 			isa = PBXGroup;
 			children = (
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
+				93716E9D2A9AA1CC007ACF2E /* TemplateView.swift */,
 				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
 				423D10EE2A7BBB75000165C4 /* IconView.swift */,
 				93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */,
 				93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */,
 				9341658F2A36731B0032F64B /* SetCapUIKit.h */,
 				934165902A36731B0032F64B /* SetCapUIKit.docc */,
+				93716EA02A9AB9D9007ACF2E /* Media.xcassets */,
 			);
 			path = SetCapUIKit;
 			sourceTree = "<group>";
@@ -359,6 +370,7 @@
 				9347837C2A80396700D29913 /* fixing-sheet-presentaiton-animation-on-push.md */,
 				93B6D57C2A8914A0009CF4AE /* implmenting-the-photo-picker.md */,
 				93B6D57D2A891A14009CF4AE /* swiftui.md */,
+				93716E9F2A9AA568007ACF2E /* post-to-insta-deeplink.md */,
 			);
 			path = journeys;
 			sourceTree = "<group>";
@@ -414,6 +426,7 @@
 				93D768742A749E7600931554 /* App.swift */,
 				93B6D58C2A89AF7E009CF4AE /* ImageLoader.swift */,
 				931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */,
+				93716E9B2A9A9DAC007ACF2E /* Instagram.swift */,
 				932AE1492A759529004EC0F7 /* PhotoLibraryService.swift */,
 				42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */,
 				93B6D58E2A89BDD4009CF4AE /* SwiftUIPicker */,
@@ -534,6 +547,9 @@
 				932AE1452A758BC4004EC0F7 /* PBXTargetDependency */,
 			);
 			name = SetCapUIKit;
+			packageProductDependencies = (
+				93716EA52A9AC0C4007ACF2E /* OrderedCollections */,
+			);
 			productName = SetCapUIKit;
 			productReference = 9341658D2A36731B0032F64B /* SetCapUIKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -696,6 +712,7 @@
 			mainGroup = 9388FC5C2A1C427C0083A500;
 			packageReferences = (
 				938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				93716EA42A9AC0C4007ACF2E /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 9388FC662A1C427C0083A500 /* Products */;
 			projectDirPath = "";
@@ -732,6 +749,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93716EA12A9AB9D9007ACF2E /* Media.xcassets in Resources */,
 				93075EA12A79B6A100F5F0A3 /* Development.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -826,6 +844,7 @@
 				93B6D5942A8AE131009CF4AE /* AllMetadataView.swift in Sources */,
 				934165912A36731B0032F64B /* SetCapUIKit.docc in Sources */,
 				423D10EF2A7BBB75000165C4 /* IconView.swift in Sources */,
+				93716E9E2A9AA1CC007ACF2E /* TemplateView.swift in Sources */,
 				93B6D5962A8AE153009CF4AE /* SwiftUIDevResources.swift in Sources */,
 				423D10ED2A76C8E7000165C4 /* MetadataView.swift in Sources */,
 				938DC8962A786D1100D5DA6A /* CaptionView.swift in Sources */,
@@ -859,6 +878,7 @@
 				93B6D58B2A899AB4009CF4AE /* PhotoPickerCell.swift in Sources */,
 				934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */,
 				93B6D5892A899A45009CF4AE /* PhotoPicker.swift in Sources */,
+				93716EA32A9ABF0C007ACF2E /* Instagram.swift in Sources */,
 				93D768752A749E7600931554 /* App.swift in Sources */,
 				93B6D5872A89878A009CF4AE /* AlbumPicker.swift in Sources */,
 				931DDC872A784D2A00E06D75 /* PHFetchResultCollection.swift in Sources */,
@@ -1590,6 +1610,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		93716EA42A9AC0C4007ACF2E /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
@@ -1615,6 +1643,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 938DC8972A78701E00D5DA6A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;
+		};
+		93716EA52A9AC0C4007ACF2E /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93716EA42A9AC0C4007ACF2E /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 		93B6D5822A89675C009CF4AE /* Sentry */ = {
 			isa = XCSwiftPackageProductDependency;
