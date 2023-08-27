@@ -21,6 +21,7 @@ public struct CaptionView: View {
             if let image = image, let metadata = metadata {
                 ScrollView {
                     VStack(spacing: 0) {
+                        Color.clear.frame(height: 30)
                         HStack(alignment: .top, spacing: 22) {
                             Image(uiImage: image)
                                 .resizable()
@@ -77,7 +78,10 @@ public struct CaptionView: View {
                 self.image = UIImage(data: imageData)
                 self.metadata = ImageMetadata(imageData: imageData)
             }
-        }.toolbar(.visible, for: .navigationBar)
+        }
+        .navigationTitle("Choose Caption")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.visible, for: .navigationBar)
     }
 }
 
