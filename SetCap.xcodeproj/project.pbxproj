@@ -27,7 +27,7 @@
 		934A8A572A74949D00BA20B2 /* PhotosPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */; };
 		935612162A87FEDD009F35C4 /* Development.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93075EA02A79B6A100F5F0A3 /* Development.xcassets */; };
 		93716EB02A9AE5A6007ACF2E /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DC8952A786D1100D5DA6A /* CaptionView.swift */; };
-		93716EB12A9AE5A6007ACF2E /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EE2A7BBB75000165C4 /* IconView.swift */; };
+		93716EB12A9AE5A6007ACF2E /* CapSetLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EE2A7BBB75000165C4 /* CapSetLoadingIndicator.swift */; };
 		93716EB22A9AE5A6007ACF2E /* MetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423D10EC2A76C8E7000165C4 /* MetadataView.swift */; };
 		93716EB32A9AE5A6007ACF2E /* SwiftUIDevResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */; };
 		93716EB42A9AE5A6007ACF2E /* AllMetadataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */; };
@@ -37,6 +37,8 @@
 		93716EBA2A9AE997007ACF2E /* InstagramSharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93716EB92A9AE997007ACF2E /* InstagramSharing.swift */; };
 		93716EBB2A9AF922007ACF2E /* SetCapCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9341656A2A3673030032F64B /* SetCapCore.framework */; };
 		93716EC02A9B91EC007ACF2E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93716EA92A9AE58C007ACF2E /* Media.xcassets */; };
+		93716EC22A9BD843007ACF2E /* CapSetIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93716EC12A9BD843007ACF2E /* CapSetIcon.swift */; };
+		93716EC42A9BDB73007ACF2E /* View+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93716EC32A9BDB73007ACF2E /* View+Util.swift */; };
 		9388FC722A1C427C0083A500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC712A1C427C0083A500 /* Assets.xcassets */; };
 		9388FC752A1C427C0083A500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9388FC732A1C427C0083A500 /* LaunchScreen.storyboard */; };
 		9388FC802A1C427C0083A500 /* SetCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9388FC7F2A1C427C0083A500 /* SetCapTests.swift */; };
@@ -132,7 +134,7 @@
 
 /* Begin PBXFileReference section */
 		423D10EC2A76C8E7000165C4 /* MetadataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataView.swift; sourceTree = "<group>"; };
-		423D10EE2A7BBB75000165C4 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		423D10EE2A7BBB75000165C4 /* CapSetLoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapSetLoadingIndicator.swift; sourceTree = "<group>"; };
 		42BAFA552A745DC000B8D039 /* PhotosPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPermissionView.swift; sourceTree = "<group>"; };
 		93075EA02A79B6A100F5F0A3 /* Development.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Development.xcassets; sourceTree = "<group>"; };
 		931DDC862A784D2A00E06D75 /* PHFetchResultCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHFetchResultCollection.swift; sourceTree = "<group>"; };
@@ -157,6 +159,8 @@
 		93716E9F2A9AA568007ACF2E /* post-to-insta-deeplink.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "post-to-insta-deeplink.md"; sourceTree = "<group>"; };
 		93716EA92A9AE58C007ACF2E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		93716EB92A9AE997007ACF2E /* InstagramSharing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSharing.swift; sourceTree = "<group>"; };
+		93716EC12A9BD843007ACF2E /* CapSetIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapSetIcon.swift; sourceTree = "<group>"; };
+		93716EC32A9BDB73007ACF2E /* View+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Util.swift"; sourceTree = "<group>"; };
 		9388FC652A1C427C0083A500 /* SetCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9388FC712A1C427C0083A500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9388FC742A1C427C0083A500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -318,7 +322,9 @@
 				423D10EC2A76C8E7000165C4 /* MetadataView.swift */,
 				93716E9D2A9AA1CC007ACF2E /* TemplateView.swift */,
 				938DC8952A786D1100D5DA6A /* CaptionView.swift */,
-				423D10EE2A7BBB75000165C4 /* IconView.swift */,
+				93716EC32A9BDB73007ACF2E /* View+Util.swift */,
+				423D10EE2A7BBB75000165C4 /* CapSetLoadingIndicator.swift */,
+				93716EC12A9BD843007ACF2E /* CapSetIcon.swift */,
 				93B6D5952A8AE153009CF4AE /* SwiftUIDevResources.swift */,
 				93B6D5922A8AE0B3009CF4AE /* AllMetadataView.swift */,
 			);
@@ -688,11 +694,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93716EC22A9BD843007ACF2E /* CapSetIcon.swift in Sources */,
 				93716EB32A9AE5A6007ACF2E /* SwiftUIDevResources.swift in Sources */,
 				93B6D5812A8964E1009CF4AE /* CameraBodies.swift in Sources */,
 				93716EB22A9AE5A6007ACF2E /* MetadataView.swift in Sources */,
-				93716EB12A9AE5A6007ACF2E /* IconView.swift in Sources */,
+				93716EB12A9AE5A6007ACF2E /* CapSetLoadingIndicator.swift in Sources */,
 				934165AB2A36733B0032F64B /* CaptionBuilder.swift in Sources */,
+				93716EC42A9BDB73007ACF2E /* View+Util.swift in Sources */,
 				93716EB42A9AE5A6007ACF2E /* AllMetadataView.swift in Sources */,
 				934165B02A3673610032F64B /* ImageMetadata.swift in Sources */,
 				93716EBA2A9AE997007ACF2E /* InstagramSharing.swift in Sources */,

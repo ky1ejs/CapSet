@@ -65,13 +65,18 @@ public struct CaptionView: View {
                     }
                 }
             } else {
-                ProgressView()
+                CapSetLoadingIndicator()
+                Text("loading")
+                    .fontSize(12)
+                    .foregroundColor(.gray)
             }
 
         }.task {
             let imageData = await loader.load()
-            self.image = UIImage(data: imageData)
-            self.metadata = ImageMetadata(imageData: imageData)
+            withAnimation {
+                self.image = UIImage(data: imageData)
+                self.metadata = ImageMetadata(imageData: imageData)
+            }
         }.toolbar(.visible, for: .navigationBar)
     }
 }

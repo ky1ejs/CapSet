@@ -39,8 +39,8 @@ struct PhotoPickerCell: View {
                     }
                 } else {
                     Rectangle()
-                        .foregroundColor(.gray)
-                    ProgressView()
+                        .foregroundColor(.black)
+                    CapSetLoadingIndicator(color: .gray)
                 }
             }.onDisappear {
                 self.image = nil
@@ -94,6 +94,8 @@ extension PhotoPickerCell {
             image = nil
             return
         }
-        self.image = image
+        withAnimation {
+            self.image = image
+        }
     }
 }
