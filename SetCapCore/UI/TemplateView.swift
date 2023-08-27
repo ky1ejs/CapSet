@@ -22,10 +22,17 @@ public extension EnvironmentValues {
 public struct TemplateView: View {
     let templateTitle: String
     let caption: String
+    let addCopyAction: Bool
     @Environment(\.templateActions) var actions: Actions?
 
     public typealias Actions = OrderedSet<Action>
     public typealias ShareHandler = ((_ caption: String) -> Void)
+
+    public init(templateTitle: String, caption: String, addCopyAction: Bool = true) {
+        self.templateTitle = templateTitle
+        self.caption = caption
+        self.addCopyAction = addCopyAction
+    }
 
     public enum Action: Hashable, Identifiable {
 
@@ -78,10 +85,13 @@ public struct TemplateView: View {
         case copy(handler: ShareHandler)
     }
 
-    private func buildActions() -> OrderedSet<Action> {
-        var actions: OrderedSet<Action> = [.copy(handler: { caption in
-            UIPasteboard.general.string = caption
-        })]
+    private func buildActions() -> Actions {
+        var actions = Actions()
+        if addCopyAction {
+            actions.append(.copy(handler: { caption in
+                UIPasteboard.general.string = caption
+            }))
+        }
         actions.append(contentsOf: self.actions ?? [])
         return actions
     }
@@ -89,38 +99,35 @@ public struct TemplateView: View {
     public var body: some View {
 
         VStack(alignment: .leading) {
-            HStack(alignment: .bottom) {
-                Text(templateTitle)
-                    .fontWeight(.medium)
-                    .foregroundColor(.primary)
-                    .padding(.bottom, 8)
-                Spacer()
-                ForEach(buildActions()) { action in
-                    Button {
-                        action.handler(caption)
-                    } label: {
-                        Label(title: {
-                            Text("unused")
-                        }, icon: {
-                            action.label
-                        })
-                        .labelStyle(.iconOnly)
+            VStack(alignment: .leading) {
+                HStack(alignment: .bottom) {
+                    Text(templateTitle)
+                        .fontWeight(.medium)
+                        .foregroundColor(.primary)
+                    Spacer()
+                    ForEach(buildActions()) { action in
+                        Button {
+                            action.handler(caption)
+                        } label: {
+                            Label(title: {
+                                Text("unused")
+                            }, icon: {
+                                action.label
+                            })
+                            .labelStyle(.iconOnly)
+                        }
+                        .buttonStyle(.bordered)
+                        .controlSize(.small)
                     }
-                    .buttonStyle(.bordered)
-                    .controlSize(.small)
                 }
-            }
-            .padding([.top, .leading, .trailing])
+                Text(caption)
 
-            Text(caption)
-                .padding([.leading, .bottom])
-
+            }.padding()
         }
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .stroke(.secondary, lineWidth: 0.5)
         )
-        .padding(.horizontal, 16)
     }
 }
 
