@@ -61,7 +61,7 @@ public struct CaptionView: View {
                                     templateTitle: template.name,
                                     caption: CaptionBuilder.build(template, with: metadata))
                             }
-                        }
+                        }.padding(.horizontal, 16)
                         Color(.clear).frame(height: 100)
                     }
                 }
