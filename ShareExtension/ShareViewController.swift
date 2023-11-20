@@ -9,7 +9,7 @@ import UIKit
 import Social
 import SwiftUI
 import UniformTypeIdentifiers
-import SetCapCore
+import CapSetCore
 import Sentry
 import Photos
 

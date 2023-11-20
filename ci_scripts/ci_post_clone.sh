@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  ci_post_clone.sh
-#  SetCap
+#  CapSet
 #
 #  Created by Kyle Satti on 7/31/23.
 #  
