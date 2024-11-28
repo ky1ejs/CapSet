@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html>
+<head>
+<title>#defines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="HeaderDoc">
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}--></style>
+</head>
+<body bgcolor="#ffffff">
+<a name="top"></a><hr>
+<!-- headerDoc=title:macro;  uid=//apple_ref/doc/title:macro/EXFTagIds;  name=EXFTagIds --><a name="//apple_ref/doc/title:macro/EXFTagIds"></a><table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="EXFTagIds">EXF Tag Ids </a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<b>See Also:</b><blockquote><dl>
+<dt>
+<a logicalpath="//apple_ref/c/macro/EXIF_ImageWidth" target="_top" href="../../../Documentation/EXFConstants/PDefines/PDefines.html#//apple_ref/c/macro/EXIF_ImageWidth">EXIF_ImageWidth</a>
+</dt>
+<dd></dd>
+</dl></blockquote>
+<pre><span class="">#define</span><span class="preprocessor"> </span><a logicalpath="//apple_ref/c/cl/EXIF_ImageWidth //apple_ref/c/tdef/EXIF_ImageWidth //apple_ref/c/tag/EXIF_ImageWidth //apple_ref/c/econst/EXIF_ImageWidth //apple_ref/c/struct/EXIF_ImageWidth //apple_ref/c/data/EXIF_ImageWidth //apple_ref/c/clconst/EXIF_ImageWidth //apple_ref/c/intf/EXIF_ImageWidth //apple_ref/c/instm/EXIF_ImageWidth //apple_ref/c/clm/EXIF_ImageWidth //apple_ref/c/intfcm/EXIF_ImageWidth //apple_ref/c/intfm/EXIF_ImageWidth //apple_ref/c/func/EXIF_ImageWidth //apple_ref/c/ftmplt/EXIF_ImageWidth //apple_ref/c/defn/EXIF_ImageWidth //apple_ref/c/macro/EXIF_ImageWidth" target="_top" href="../../../Documentation/EXFConstants/PDefines/PDefines.html#//apple_ref/c/macro/EXIF_ImageWidth"><span class="preprocessor">EXIF_ImageWidth</span></a><span class="preprocessor"> </span><span class="preprocessor">0x0100</span> </pre>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<p><!-- begin discussion -->The Common tag ids are:
+<br><br>
+EXIF_ImageWidth                       0x0100     
+EXIF_ImageLength                      0x0101     
+EXIF_BitsPerSample                    0x0102     
+EXIF_Compression                      0x0103     
+EXIF_PhotometricInterpretation        0x0106     
+EXIF_ImageDescription                 0x010e     
+EXIF_Make                             0x010f     
+EXIF_Model                            0x0110     
+EXIF_StripOffsets                     0x0111     
+EXIF_Orientation                      0x0112     
+EXIF_SamplesPerPixel                  0x0115     
+EXIF_RowsPerStrip                     0x0116     
+EXIF_StripByteCounts                  0x0117     
+EXIF_XResolution                      0x011a     
+EXIF_YResolution                      0x011b     
+EXIF_PlanarConfiguration              0x011c     
+EXIF_ResolutionUnit                   0x0128
+EXIF_Software                         0x0131     
+EXIF_DateTime                         0x0132
+EXIF_Artist                           0x013b
+EXIF_HostComputer                     0x013c
+EXIF_Predictor                        0x013d
+EXIF_WhitePoint                       0x013e
+EXIF_PrimaryChromaticities            0x013f
+EXIF_JPEGInterchangeFormat            0x0201
+EXIF_JPEGInterchangeFormatLength      0x0202 
+EXIF_YCbCrCoefficients                0x0211 
+EXIF_YCbCrSubSampling                 0x0212
+EXIF_YCbCrPositioning                 0x0213
+EXIF_ReferenceBlackWhite              0x0214
+EXIF_Copyright                        0x8298
+EXIF_Exif                             0x8769      
+EXIF_GPS                              0x8825
+EXIF_SpectralSensitivity              0x8824
+EXIF_ExposureProgram                  0x8822 
+EXIF_ISOSpeedratings                  0x8827     
+EXIF_ExposureTime                     0x829a     
+EXIF_FNumber                          0x829d     
+EXIF_ExifVersion                      0x9000     
+EXIF_DateTimeOriginal                 0x9003 
+EXIF_DateTimeDigitized                0x9004 
+EXIF_ComponentsConfiguration          0x9101
+EXIF_CompressedBitsPerPixel           0x9102
+EXIF_ShutterSpeedValue                0x9201     
+EXIF_ApertureValue                    0x9202     
+EXIF_BrightnessValue                  0x9203     
+EXIF_ExposureBiasValue                0x9204     
+EXIF_MaxApertureRatioValue            0x9205     
+EXIF_SubjectDistance                  0x9206     
+EXIF_MeteringMode                     0x9207     
+EXIF_LightSource                      0x9208     
+EXIF_Flash                            0x9209     
+EXIF_FocalLength                      0x920a
+EXIF_MakerNote                        0x927c
+EXIF_UserComment                      0x9286
+EXIF_SubSecTime                       0x9290     
+EXIF_SubSecTimeOriginal               0x9291 
+EXIF_SubSecTimeDigitized              0x9292 
+EXIF_FileSource                       0xa300 
+EXIF_SceneType                        0xa301
+EXIF_CFAPattern                       0xa302
+EXIF_FlashpixVersion                  0xa000     
+EXIF_ColorSpace                       0xa001 
+EXIF_PixelXDimension                  0xa002
+EXIF_PixelYDimension                  0xa003
+EXIF_FocalPlaneXResolution            0xa20e
+EXIF_FocalPlaneYResolution            0xa20f
+EXIF_FocalPlaneResolutionUnit         0xa210 
+EXIF_SubjectLocation                  0xa214
+EXIF_ExposureIndex                    0xa215
+EXIF_SensingMethod                    0xa217
+EXIF_CustomRendered                   0xa401
+EXIF_ExposureMode                     0xa402
+EXIF_WhiteBalance                     0xa403
+EXIF_DigitalZoomRatio                 0xa404
+EXIF_FocalLengthIn35mmFilm            0xa405
+EXIF_SceneCaptureType                 0xa406
+EXIF_GainControl                      0xa407
+EXIF_Contrast                         0xa408
+EXIF_Saturation                       0xa409
+EXIF_Sharpness                        0xa40a
+EXIF_DeviceSettingDescription         0xa40b
+EXIF_SubjectDistanceRange             0xa40c
+EXIF_Gamma                            0xa500
+EXIF_GPSVersion                       0x0000  
+EXIF_GPSLatitudeRef                   0x0001     
+EXIF_GPSLatitude                      0x0002     
+EXIF_GPSLongitudeRef                  0x0003     
+EXIF_GPSLongitude                     0x0004     
+EXIF_GPSAltitudeRef                   0x0005     
+EXIF_GPSAltitude                      0x0006     
+EXIF_GPSTimeStamp                     0x0007     
+EXIF_GPSSatellites                    0x0008     
+EXIF_GPSStatus                        0x0009     
+EXIF_GPSMeasureMode                   0x000a     
+EXIF_GPSDOP                           0x000b     
+EXIF_GPSSpeedRef                      0x000c     
+EXIF_GPSSpeed                         0x000d     
+EXIF_GPSTrackRef                      0x000e     
+EXIF_GPSTrack                         0x000f     
+EXIF_GPSImgDirectionRef               0x0010     
+EXIF_GPSImgDirection                  0x0011     
+EXIF_GPSMapDatum                      0x0012     
+EXIF_GPSDestLatitudeRef               0x0013     
+EXIF_GPSDestLatitude                  0x0014     
+EXIF_GPSDestLongitudeRef              0x0015     
+EXIF_GPSDestLongitude                 0x0016     
+EXIF_GPSDestBearingRef                0x0017     
+EXIF_GPSDestBearing                   0x0018     
+EXIF_GPSDestDistanceRef               0x0019     
+EXIF_GPSDestDistance                  0x001a 
+<br><br><!-- end discussion --></p>
+<p></p>
+<hr>
+<!-- headerDoc=macro;  uid=//apple_ref/c/macro/EXIF_ImageWidth;  name=EXIF_ImageWidth --><a name="//apple_ref/c/macro/EXIF_ImageWidth"></a><table border="0" cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5">
+<h3><a name="EXIF_ImageWidth">EXIF_ImageWidth </a></h3>
+</td></tr></table>
+<hr>
+<p></p>
+<b>See Also:</b><blockquote><dl>
+<dt>
+<a logicalpath="//apple_ref/doc/title:macro/EXFTagIds" target="_top" href="../../../Documentation/EXFConstants/PDefines/PDefines.html#//apple_ref/doc/title:macro/EXFTagIds">EXF Tag Ids</a>
+</dt>
+<dd></dd>
+</dl></blockquote>
+<pre><span class="">#define</span><span class="preprocessor"> </span><a logicalpath="//apple_ref/c/cl/EXIF_ImageWidth //apple_ref/c/tdef/EXIF_ImageWidth //apple_ref/c/tag/EXIF_ImageWidth //apple_ref/c/econst/EXIF_ImageWidth //apple_ref/c/struct/EXIF_ImageWidth //apple_ref/c/data/EXIF_ImageWidth //apple_ref/c/clconst/EXIF_ImageWidth //apple_ref/c/intf/EXIF_ImageWidth //apple_ref/c/instm/EXIF_ImageWidth //apple_ref/c/clm/EXIF_ImageWidth //apple_ref/c/intfcm/EXIF_ImageWidth //apple_ref/c/intfm/EXIF_ImageWidth //apple_ref/c/func/EXIF_ImageWidth //apple_ref/c/ftmplt/EXIF_ImageWidth //apple_ref/c/defn/EXIF_ImageWidth //apple_ref/c/macro/EXIF_ImageWidth" target="_top" href="../../../Documentation/EXFConstants/PDefines/PDefines.html#//apple_ref/c/macro/EXIF_ImageWidth"><span class="preprocessor">EXIF_ImageWidth</span></a><span class="preprocessor"> </span><span class="preprocessor">0x0100</span> </pre>
+<h5 class="tight">
+<font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5>
+<p><!-- begin discussion -->The Common tag ids are:
+<br><br>
+EXIF_ImageWidth                       0x0100     
+EXIF_ImageLength                      0x0101     
+EXIF_BitsPerSample                    0x0102     
+EXIF_Compression                      0x0103     
+EXIF_PhotometricInterpretation        0x0106     
+EXIF_ImageDescription                 0x010e     
+EXIF_Make                             0x010f     
+EXIF_Model                            0x0110     
+EXIF_StripOffsets                     0x0111     
+EXIF_Orientation                      0x0112     
+EXIF_SamplesPerPixel                  0x0115     
+EXIF_RowsPerStrip                     0x0116     
+EXIF_StripByteCounts                  0x0117     
+EXIF_XResolution                      0x011a     
+EXIF_YResolution                      0x011b     
+EXIF_PlanarConfiguration              0x011c     
+EXIF_ResolutionUnit                   0x0128
+EXIF_Software                         0x0131     
+EXIF_DateTime                         0x0132
+EXIF_Artist                           0x013b
+EXIF_HostComputer                     0x013c
+EXIF_Predictor                        0x013d
+EXIF_WhitePoint                       0x013e
+EXIF_PrimaryChromaticities            0x013f
+EXIF_JPEGInterchangeFormat            0x0201
+EXIF_JPEGInterchangeFormatLength      0x0202 
+EXIF_YCbCrCoefficients                0x0211 
+EXIF_YCbCrSubSampling                 0x0212
+EXIF_YCbCrPositioning                 0x0213
+EXIF_ReferenceBlackWhite              0x0214
+EXIF_Copyright                        0x8298
+EXIF_Exif                             0x8769      
+EXIF_GPS                              0x8825
+EXIF_SpectralSensitivity              0x8824
+EXIF_ExposureProgram                  0x8822 
+EXIF_ISOSpeedratings                  0x8827     
+EXIF_ExposureTime                     0x829a     
+EXIF_FNumber                          0x829d     
+EXIF_ExifVersion                      0x9000     
+EXIF_DateTimeOriginal                 0x9003 
+EXIF_DateTimeDigitized                0x9004 
+EXIF_ComponentsConfiguration          0x9101
+EXIF_CompressedBitsPerPixel           0x9102
+EXIF_ShutterSpeedValue                0x9201     
+EXIF_ApertureValue                    0x9202     
+EXIF_BrightnessValue                  0x9203     
+EXIF_ExposureBiasValue                0x9204     
+EXIF_MaxApertureRatioValue            0x9205     
+EXIF_SubjectDistance                  0x9206     
+EXIF_MeteringMode                     0x9207     
+EXIF_LightSource                      0x9208     
+EXIF_Flash                            0x9209     
+EXIF_FocalLength                      0x920a
+EXIF_MakerNote                        0x927c
+EXIF_UserComment                      0x9286
+EXIF_SubSecTime                       0x9290     
+EXIF_SubSecTimeOriginal               0x9291 
+EXIF_SubSecTimeDigitized              0x9292 
+EXIF_FileSource                       0xa300 
+EXIF_SceneType                        0xa301
+EXIF_CFAPattern                       0xa302
+EXIF_FlashpixVersion                  0xa000     
+EXIF_ColorSpace                       0xa001 
+EXIF_PixelXDimension                  0xa002
+EXIF_PixelYDimension                  0xa003
+EXIF_FocalPlaneXResolution            0xa20e
+EXIF_FocalPlaneYResolution            0xa20f
+EXIF_FocalPlaneResolutionUnit         0xa210 
+EXIF_SubjectLocation                  0xa214
+EXIF_ExposureIndex                    0xa215
+EXIF_SensingMethod                    0xa217
+EXIF_CustomRendered                   0xa401
+EXIF_ExposureMode                     0xa402
+EXIF_WhiteBalance                     0xa403
+EXIF_DigitalZoomRatio                 0xa404
+EXIF_FocalLengthIn35mmFilm            0xa405
+EXIF_SceneCaptureType                 0xa406
+EXIF_GainControl                      0xa407
+EXIF_Contrast                         0xa408
+EXIF_Saturation                       0xa409
+EXIF_Sharpness                        0xa40a
+EXIF_DeviceSettingDescription         0xa40b
+EXIF_SubjectDistanceRange             0xa40c
+EXIF_Gamma                            0xa500
+EXIF_GPSVersion                       0x0000  
+EXIF_GPSLatitudeRef                   0x0001     
+EXIF_GPSLatitude                      0x0002     
+EXIF_GPSLongitudeRef                  0x0003     
+EXIF_GPSLongitude                     0x0004     
+EXIF_GPSAltitudeRef                   0x0005     
+EXIF_GPSAltitude                      0x0006     
+EXIF_GPSTimeStamp                     0x0007     
+EXIF_GPSSatellites                    0x0008     
+EXIF_GPSStatus                        0x0009     
+EXIF_GPSMeasureMode                   0x000a     
+EXIF_GPSDOP                           0x000b     
+EXIF_GPSSpeedRef                      0x000c     
+EXIF_GPSSpeed                         0x000d     
+EXIF_GPSTrackRef                      0x000e     
+EXIF_GPSTrack                         0x000f     
+EXIF_GPSImgDirectionRef               0x0010     
+EXIF_GPSImgDirection                  0x0011     
+EXIF_GPSMapDatum                      0x0012     
+EXIF_GPSDestLatitudeRef               0x0013     
+EXIF_GPSDestLatitude                  0x0014     
+EXIF_GPSDestLongitudeRef              0x0015     
+EXIF_GPSDestLongitude                 0x0016     
+EXIF_GPSDestBearingRef                0x0017     
+EXIF_GPSDestBearing                   0x0018     
+EXIF_GPSDestDistanceRef               0x0019     
+EXIF_GPSDestDistance                  0x001a 
+<br><br><!-- end discussion --></p>
+<p></p>
+<p>Last Updated: Wednesday, May 14, 2008
+</p>
+</body>
+</html>

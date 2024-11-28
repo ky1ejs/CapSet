@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/28/trunk/Classes
+END
+EXFUtils.m
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/13/trunk/Classes/EXFUtils.m
+END
+EXFHandlers.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/13/trunk/Classes/EXFHandlers.m
+END
+EXFConstants.h
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/24/trunk/Classes/EXFConstants.h
+END
+EXFJFIF.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/13/trunk/Classes/EXFJFIF.h
+END
+EXF.h
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/24/trunk/Classes/EXF.h
+END
+EXFMetaData.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/13/trunk/Classes/EXFMetaData.h
+END
+EXFTagDefinitionHolder.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/Classes/EXFTagDefinitionHolder.h
+END
+EXFJFIF.m
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/13/trunk/Classes/EXFJFIF.m
+END
+EXFJpeg.h
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/13/trunk/Classes/EXFJpeg.h
+END
+EXFMetaData.m
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/26/trunk/Classes/EXFMetaData.m
+END
+EXFLogging.h
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/24/trunk/Classes/EXFLogging.h
+END
+EXFTagDefinitionHolder.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/13/trunk/Classes/EXFTagDefinitionHolder.m
+END
+EXFGPS.h
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/28/trunk/Classes/EXFGPS.h
+END
+EXFMutableMetaData.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/13/trunk/Classes/EXFMutableMetaData.h
+END
+EXFJpeg.m
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/13/trunk/Classes/EXFJpeg.m
+END
+EXFGPS.m
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/24/trunk/Classes/EXFGPS.m
+END
+EXFUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/13/trunk/Classes/EXFUtils.h
+END
+EXFHandlers.h
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/24/trunk/Classes/EXFHandlers.h
+END

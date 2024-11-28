@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+    "http://www.w3.org/TR/1998/REC-html40-19980424/loose.dtd">
+<html><head>
+    <title>Methods</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="generator" content="HeaderDoc" />
+<style type="text/css"><!--.keyword {background:#ffffff; color:#761550;}.template {background:#ffffff; color:#761550;}.number {background: #ffffff; color:#0000ff;}.function {background:#ffffff; color:#000000;}.string {background: #ffffff; color:#891315;}.preprocessor {background:#ffffff; color:#236e25}.comment {background:#ffffff; color:#236e25}.char {background: #ffffff; color:#0000ff;}.var {background:#ffffff; color:#000000;}.type {background:#ffffff; color:#761550;}.param {background:#ffffff; color:#000000;}a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #0000ff;}a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: small; color: #ff6600;}h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;}body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;}--></style></head><body bgcolor="#ffffff">
+<a name="top"></a>
+<a name="HeaderDoc_methods"></a>
+<dl>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/EXFraction/description" target="doc">-description </a></tt></dt>
+<dd>Returns a String representing the double format of the fraction.
+</dd>
+<dt><tt><a href="Methods.html#//apple_ref/doc/title:instm/EXFraction/initWith" target="doc">-initWith</a></tt></dt>
+<dd>initialises the EXFraction with a numerator and denominator</dd>
+<dt><tt><a href="Methods.html#//apple_ref/occ/instm/EXFraction/initWith:denominator:" target="doc">-initWith:denominator: </a></tt></dt>
+<dd>initialises the EXFraction with a numerator and denominator</dd>
+</dl>
+<hr><!-- headerDoc=instm;  uid=//apple_ref/occ/instm/EXFraction/description;  name=EXFraction::description -->
+<a name="//apple_ref/occ/instm/EXFraction/description"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="description">description </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->Returns a String representing the double format of the fraction.
+<!-- end abstract --></p>
+<p></p><pre>-(<!-- a logicalPath="//apple_ref/occ/cl/NSString //apple_ref/occ/tdef/NSString //apple_ref/occ/tag/NSString //apple_ref/occ/econst/NSString //apple_ref/occ/struct/NSString //apple_ref/occ/clconst/NSString //apple_ref/occ/intf/NSString" --><span class="type">NSString</span><!-- /a --><span class="type">*</span>) <span class="var">description</span>; </pre>
+<h5 class="tight"><font face="Lucida Grande,Helvetica,Arial">Discussion</font>
+</h5><p><!-- begin discussion -->If a true representation of the Fraction is required use the accessor methods to retrieve the two 
+longs and construct the required format.
+<br><br>
+ <!-- end discussion --></p>
+<p></p><hr><!-- headerDoc=title:instm;  uid=//apple_ref/doc/title:instm/EXFraction/initWith;  name=EXFraction::initWith -->
+<a name="//apple_ref/doc/title:instm/EXFraction/initWith"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="initWith">initWith</a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->initialises the EXFraction with a numerator and denominator<!-- end abstract --></p>
+<p></p><b>See Also:</b><blockquote><dl>
+<dt><!-- a logicalPath="//apple_ref/occ/instm/EXFraction/initWith:denominator:" -->initWith:denominator:<!-- /a --></dt><dd></dd></dl></blockquote>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/econst/id //apple_ref/occ/struct/id //apple_ref/occ/clconst/id //apple_ref/occ/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//apple_ref/occ/instm/initWith //apple_ref/occ/clm/initWith //apple_ref/occ/intfcm/initWith //apple_ref/occ/intfm/initWith //apple_ref/occ/func/initWith //apple_ref/occ/ftmplt/initWith //apple_ref/occ/defn/initWith //apple_ref/occ/macro/initWith" --><span class="function">initWith</span><!-- /a -->: (<!-- a logicalPath="//apple_ref/occ/cl/long //apple_ref/occ/tdef/long //apple_ref/occ/tag/long //apple_ref/occ/econst/long //apple_ref/occ/struct/long //apple_ref/occ/clconst/long //apple_ref/occ/intf/long" --><span class="type">long</span><!-- /a -->) <!-- a logicalPath="//apple_ref/occ/instm/numerator //apple_ref/occ/clm/numerator //apple_ref/occ/intfcm/numerator //apple_ref/occ/intfm/numerator //apple_ref/occ/func/numerator //apple_ref/occ/ftmplt/numerator //apple_ref/occ/defn/numerator //apple_ref/occ/macro/numerator" --><span class="function">numerator</span><!-- /a -->: (<!-- a logicalPath="//apple_ref/occ/cl/long //apple_ref/occ/tdef/long //apple_ref/occ/tag/long //apple_ref/occ/econst/long //apple_ref/occ/struct/long //apple_ref/occ/clconst/long //apple_ref/occ/intf/long" --><span class="type">long</span><!-- /a -->) <span class="var">denominator</span>; </pre>
+<p></p><hr><!-- headerDoc=instm;  uid=//apple_ref/occ/instm/EXFraction/initWith:denominator:;  name=EXFraction::initWith:denominator: -->
+<a name="//apple_ref/occ/instm/EXFraction/initWith:denominator:"></a>
+<table border="0"  cellpadding="2" cellspacing="2" width="300"><tr><td valign="top" height="12" colspan="5"><h3><a name="initWith:denominator:">initWith:denominator: </a></h3>
+</td></tr></table><hr><p><!-- begin abstract -->initialises the EXFraction with a numerator and denominator<!-- end abstract --></p>
+<p></p><b>See Also:</b><blockquote><dl>
+<dt><!-- a logicalPath="//apple_ref/doc/title:instm/EXFraction/initWith" -->initWith<!-- /a --></dt><dd></dd></dl></blockquote>
+<pre>-(<!-- a logicalPath="//apple_ref/occ/cl/id //apple_ref/occ/tdef/id //apple_ref/occ/tag/id //apple_ref/occ/econst/id //apple_ref/occ/struct/id //apple_ref/occ/clconst/id //apple_ref/occ/intf/id" --><span class="type">id</span><!-- /a -->) <!-- a logicalPath="//apple_ref/occ/instm/initWith //apple_ref/occ/clm/initWith //apple_ref/occ/intfcm/initWith //apple_ref/occ/intfm/initWith //apple_ref/occ/func/initWith //apple_ref/occ/ftmplt/initWith //apple_ref/occ/defn/initWith //apple_ref/occ/macro/initWith" --><span class="function">initWith</span><!-- /a -->: (<!-- a logicalPath="//apple_ref/occ/cl/long //apple_ref/occ/tdef/long //apple_ref/occ/tag/long //apple_ref/occ/econst/long //apple_ref/occ/struct/long //apple_ref/occ/clconst/long //apple_ref/occ/intf/long" --><span class="type">long</span><!-- /a -->) <!-- a logicalPath="//apple_ref/occ/instm/numerator //apple_ref/occ/clm/numerator //apple_ref/occ/intfcm/numerator //apple_ref/occ/intfm/numerator //apple_ref/occ/func/numerator //apple_ref/occ/ftmplt/numerator //apple_ref/occ/defn/numerator //apple_ref/occ/macro/numerator" --><span class="function">numerator</span><!-- /a -->: (<!-- a logicalPath="//apple_ref/occ/cl/long //apple_ref/occ/tdef/long //apple_ref/occ/tag/long //apple_ref/occ/econst/long //apple_ref/occ/struct/long //apple_ref/occ/clconst/long //apple_ref/occ/intf/long" --><span class="type">long</span><!-- /a -->) <span class="var">denominator</span>; </pre>
+<p></p><p>Last Updated: Thursday, June 19, 2008
+</p></body></html>

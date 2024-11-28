@@ -1,0 +1,107 @@
+<html>
+	<head>
+
+	<title>This is my favorite title line</title>
+
+	<!-- A big scary CSS block -->
+	<style type="text/css"><!--#pagehead { FONT-WEIGHT: bold; FONT-SIZE: 32px; COLOR: #000000; FONT-FAMILY: lucida grande, geneva, helvetica, arial, sans-serif; } td { font-size: 10px; } a:link {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #0000ff;} a:visited {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #0000ff;} a:visited:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #ff6600;} a:active {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #ff6600;} a:hover {text-decoration: underline; font-family: lucida grande, geneva, helvetica, arial, sans-serif; color: #ff6600;} h4 {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: tiny; font-weight: bold;} body {text-decoration: none; font-family: lucida grande, geneva, helvetica, arial, sans-serif; font-size: 10pt;} --></style>
+	<!-- End big scary CSS block -->
+
+	</head>
+	<Meta name="ROBOTS" content="NOINDEX">
+	
+<body bgcolor="#ffffff">
+
+<a name="MYTAG"></a>
+
+<center>
+
+<!-- start of header -->
+<!--#include virtual="/path/to/header.html"-->
+<!-- end of header -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="600">
+		<tr height="5">
+				<td width="600" height="5"><br>
+				</td>
+			</tr>
+			<tr>
+				<td width="600">
+					<div id="pagehead"></div>
+				</td>
+			</tr>
+			<tr height="10">
+				<td width="600" height="10"><br>
+				</td>
+			</tr>
+			<tr>
+				
+    <td valign="top" width="600"><font face="Geneva,Helvetica,Arial" size="2"><span id="bodytext">  </span></font></td>
+			</tr>
+			<tr height="10">
+				<td height="10" width="600"></td>
+			</tr>
+			<tr height="5">
+				<td height="5" width="600">
+					<hr alt="">
+					<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="600" align="center" valign="top">
+<H2>Headers</H2>
+				
+      <blockquote class='groupindent'>
+<table border="0" cellpadding="1" cellspacing="0" width="420"><tr><td width="33%"><a name="group___header_EX" href="EXF/index.html" target ="_top">EXF</a><br/></td>
+<td width="33%"><a  href="EXFConstants/index.html" target ="_top">EXFConstants</a><br/></td>
+<td width="33%"><a  href="EXFGPS/index.html" target ="_top">EXFGPS</a><br/></td>
+</tr><tr>
+<td width="33%"><a  href="EXF/.svn/text-base/index.html.svn-base" target ="_top">EXF</a><br/></td>
+<td width="33%"><a  href="EXFConstants/.svn/text-base/index.html.svn-base" target ="_top">EXFConstants</a><br/></td>
+<td width="33%"><a  href="EXFGPS/.svn/text-base/index.html.svn-base" target ="_top">EXFGPS</a><br/></td>
+</tr></table>
+</blockquote>
+
+<H2>Functions</H2>
+      <blockquote class='groupindent'>
+<table border="0" cellpadding="1" cellspacing="0" width="420"><tr><td width="33%"><a  logicalPath="//apple_ref/occ/instm/EXFraction/description" name="group___function_EX" href="EXFConstants/Classes/EXFraction_/Methods/Methods.html#//apple_ref/occ/instm/EXFraction/description" retarget="yes" target="_top">-[ EXFraction description ]</a><br/></td>
+<td width="33%"><a  logicalPath="//apple_ref/occ/instm/EXFraction/initWith:denominator:"  href="EXFConstants/Classes/EXFraction_/Methods/Methods.html#//apple_ref/occ/instm/EXFraction/initWith:denominator:" retarget="yes" target="_top">-[ EXFraction initWith:denominator: ]</a><br/></td>
+<td width="33%"><a  logicalPath="//apple_ref/occ/instm/EXFTag/initWith:aDataType:aName:parentTagId:editable:components:"  href="EXFConstants/Classes/EXFTag_/Methods/Methods.html#//apple_ref/occ/instm/EXFTag/initWith:aDataType:aName:parentTagId:editable:components:" retarget="yes" target="_top">-[ EXFTag initWith:aDataType:aName:parentTagId:editable:components: ]</a><br/></td>
+</tr></table>
+</blockquote>
+
+    </td>
+			</tr>
+		</table>
+
+	
+<!-- start of footer --> 
+<!--#include virtual="/includes/reflibfeedback" -->
+<!-- START FOOTER TABLE -->
+<table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr><td width="600"><img width="1" height="48" src="/images/1dot.gif" alt=""></td></tr>
+<tr><td bgcolor="#919699" colspan="2"><img width="600" height="1" src="/images/1dot.gif" alt=""></td></tr>
+<tr><td><img src="/images/1dot.gif" width="1" height="17" alt=""></td></tr>
+<tr> 
+	<td> 
+	<div align="center">
+	<p>This page is Copyright &copy; 2004 Me.<br>
+	All rights reserved.<br>
+	All wrongs reversed.</p>
+	</div>
+	</td>
+</tr>
+</table>
+</center>
+<!-- END FOOTER TABLE -->
+
+<!-- end of footer -->
+	
+</center>
+
+	
+
+</body>
+
+</html>
+
